@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Clio Salgado" />
+  <meta name="description" content="Business DataScience(Big Data) & Full-Stack Web Developer Student" />
+  <meta name="keywords" content="Web Developer, Full-Stack Web Developer, Big Data, DataScience, Frontend/ Backend, Student" />
+  <meta name="theme-color" content="#09f" />
+  <!-- Fuente  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kaushan+Script&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- Iconos  -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Portfolio&Projects</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script type="module" src="assets/js/main.js"></script>
+  <!-- API de correo para formulario  -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: '7uRVhqQKSXfPsdozW',
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
+      <path fill="currentColor"
+        d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
+      </path>
+    </svg>
+  </div>
+
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+      <a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>Clio's</a>
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">About Me</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portfolio & Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" name="language" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+      </div>
+
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+
+      <div class="home__container grid--container">
+
+        <div class="home__image">
+          <img src="assets/img/picture1.png" alt="profile photo" title="Clio Salgado" />
+        </div>
+
+        <ul class="home__social flex--container">
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://www.linkedin.com/in/clio-salgado-845a93319/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://wa.me/+523323429201?text=Tu%20Mensaje%20De%20Texto" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://github.com/Clic-stack" target="_blank"><i class="bx bxl-github"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="mailto:clioanahi@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+          <h1 class="home__title">Hey! I'm Clio</h1>
+          <p class="home__description">
+            I’m a Business Data Science (Big Data) student with hands-on experience and a specialization in Full-Stack Web Development, along with over seven years of professional experience in administrative, operational, and quality management roles. I am currently transitioning into the tech sector, combining my analytical skills with a strong passion for creating digital solutions.
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <a class="btn btn--primary" href="assets/img/English CV.pdf" title="Descargar mi CV" download="CV_Clio_Salgado" rel="noreferrer nofollow">
+            Download CV
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="about" class="about section">
+      <h2 class="section__title">About Me</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          Hello, my name is Clio. I’m 28 years old and originally from the State of Mexico. I’ve had the opportunity to live in three different states across the country, and for the past six years, I’ve been residing in Guadalajara, Jalisco. <br>
+
+          <br>I have a solid background in administrative, operational, and quality management roles. I’m currently transitioning into the tech sector, pursuing a Bachelor's degree in Business Data Science (Big Data), along with a specialization in Full-Stack Web Development and Computer Science. <br>
+
+          <br>Although I haven’t yet completed my studies, I’ve already developed and deployed several web projects and applications. I continue to expand my knowledge and strengthen my practical experience in both Data Science and Full-Stack Web Development. <br>
+
+          <br>At this stage in my career, my main goal is to apply my skills, strengths, and technical knowledge to real-world projects in Technology, Data Science, or Web Development.
+        </p>
+
+        <div class="about__cards flex--container">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me3.jpg" alt="Clio in TalentLand"
+              title="Locking and reaching targets" />
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me2.jpg" alt="Clio in Google stand"
+              title="Ongoing training" />
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me.jpg" alt="Clío anywhere"
+              title="Enjoying achievments" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description flex--container">
+          In today’s increasingly competitive world, we cultivate skills that empower us to pursue greater opportunities with confidence.
+        </p>
+
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">
+            <!--Card 1 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-html5 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">HTML</h3>
+
+                <p class="skills__card-description">
+                  HyperText Markup Language (HTML) is a language used to create and structure web pages. It is the standard language for documents intended to be displayed on the web, thanks to its semantic nature, which allows elements to be defined through tags. These tags indicate how content should be presented, and HTML is often complemented by CSS and JavaScript to achieve a more complete visual and functional experience.
+                  <ul class="skills__card-list">
+                    <li class="skills__card-list--title">
+                      <b>Skills Developed:</b>
+                    </li>
+                    <li class="skills__card-list--item">
+                      Structuring content on a web page using tags that define elements such as text, images, videos, links, tables, lists, embedded media, and forms.
+                    </li>
+                    <li class="skills__card-list--item">
+                      Understanding and applying metadata in website development to improve SEO (Search Engine Optimization) performance.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+            <!--Card 2 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-css3 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">CSS3</h3>
+
+                <p class="skills__card-description">
+                  Cascading Style Sheets (CSS) is a language used to design and create visually appealing web pages for users. It is used to describe the presentation of documents written in HTML or XML. Therefore, it’s important to highlight that CSS is one of the core technologies of the World Wide Web, alongside HTML and JavaScript.
+                  <ul class="skills__card-list">
+                    <li class="skills__card-list--title">
+                      <b>Skills Developed:</b>
+                    </li>
+                    <li class="skills__card-list--item">
+                      Use and application of various CSS properties to style colors, typography, links, lists, overflow content, images, positioning, and stacking.
+                    </li>
+                    <li class="skills__card-list--item">
+                      Knowledge of the box model, visibility, measurement units, Grid, Flexbox, CSS variables, and media queries.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-javascript flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript Backend</h3>
+
+                <p class="skills__card-description">
+                  JavaScript is a cross-platform, object-oriented programming language used to make web pages interactive. It is a prototype-based language with dynamic typing, and it supports event-driven, functional, and imperative programming styles. JavaScript is widely used in web development, server-side applications, and mobile app development.
+                  <ul class="skills__card-list">
+                    <li class="skills__card-list--title">
+                      <b>Skills Developed:</b>
+                    </li>
+                    <li class="skills__card-list--item">
+                      Knowledge and application of the terminal, variables, data types (primitive and structured), functions, methods in primitive types (numbers and strings), array methods, object methods, basic and comparison operators, type coercion, loops, conditionals, and logical operators.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+            <!--Card 4 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-javascript flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript Frontend</h3>
+
+                <p class="skills__card-description">
+                  JavaScript is a cross-platform, object-oriented programming language used to bring life, interactivity, and dynamism to websites and web pages.
+                  <ul class="skills__card-list">
+                    <li class="skills__card-list--title">
+                      <b>Skills Developed:</b>
+                    </li>
+                    <li class="skills__card-list--item">
+                      Knowledge and application of transitions, animations, advanced functions (constructors, higher-order, factory, recursive), DOM manipulation, and callbacks.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+            <!--Card 5 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-react flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">React</h3>
+
+                <p class="skills__card-description">
+                  React enables the creation of modular and scalable interfaces through reusable components, efficient state management, and optimized rendering with the virtual DOM. Its declarative approach and robust ecosystem make it a key tool for developing modern web applications, especially in SPA environments.
+                  <ul class="skills__card-list">
+                    <li class="skills__card-list--title">
+                      <b>Skills Developed:</b>
+                    </li>
+                    <li class="skills__card-list--item">
+                      Application of best practices in React using JSX, modular and external styles, reusable components, destructured props, and efficient state management. Implementation of conditional logic, computed states, and smooth interaction with the virtual DOM. Mastery of immutability principles, modern operators such as spread and optional chaining, and use of functional methods for dynamic rendering.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </details>
+            <!--Card 6 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-react flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">React</h3>
+                  <ul class="skills__card-list">
+                    <li class="skills__card-list--title">
+                      <b>Skills Developed:</b>
+                    </li>
+                    <li class="skills__card-list--item">
+                      Forms with controlled and uncontrolled inputs; the useEffect hook; data fetching; event listeners; ES Modules; API calls; loading state handling and error management; hooks such as useMemo and useCallback; BEM methodology; and styling with Sass.
+                    </li>
+                    <li class="skills__card-list--item">
+                      The useRef hook; creation of custom hooks; functional components; use of the children prop; implementation of modals; and error handling.
+                    </li>
+                    <li class="skills__card-list--item">
+                      The useReducer hook; Context API with Provider and Consumer; the useContext hook; React Router; route protection through authentication; global state management with Zustand; and use of Local Storage.
+                    </li>
+                  </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="skills__tags flex--container">
+          <h3 class="skills__tags-title">Habilidades Blandas</h3>
+          <div class="skills__tags-container flex--container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <span class="skills__tag">Perseverance</span>
+                <span class="skills__tag-back">“I build with intention, learn with purpose, and evolve with clarity. Every project reflects my commitment to excellence through strategic iterations, conscious decisions, and continuous improvement.”</span>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <span class="skills__tag">Adaptability</span>
+                <span class="skills__tag-back">“I evolve with speed and precision, integrating technologies and methodologies that respond to both context and user needs. Every solution I develop reflects technical flexibility and strategic vision.”</span>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <span class="skills__tag">Teamwork</span>
+                <span class="skills__tag-back">“I integrate skills, languages, and styles to build technical solutions that combine modularity and diversity. Collaboration means achieving together what no individual profile could accomplish alone.”</span>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <span class="skills__tag">Analytical, Logical, and Creative Thinking</span>
+                <span class="skills__tag-back">“I design solutions that solve with precision and communicate with intention. Every component reflects functional excellence, structural logic, and aesthetic sensitivity.”</span>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <span class="skills__tag">Continuous and Self-Directed Learning</span>
+                <span class="skills__tag-back">“I learn with depth and speed, integrating technologies and methodologies that drive every technical decision. Learning is my constant practice to evolve, iterate, and position myself internationally.”</span>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <span class="skills__tag">Problem Solving</span>
+                <span class="skills__tag-back">“I turn errors into opportunities to strengthen architecture, enhance user experience, and refine technical narrative. My approach combines logic, sensitivity, and applied creativity.”</span>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <span class="skills__tag">Results-Oriented Mindset</span>
+                <span class="skills__tag-back">“I make technical and narrative decisions with clear intention and strategic focus. Every solution I develop aims for real impact, tangible value, and both functional and aesthetic excellence.”</span>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <span class="skills__tag">Assertive and Empathetic Communication</span>
+                <span class="skills__tag-back">“I collaborate with clarity and sensitivity at every stage of development. My interfaces honor both technical logic and human experience, intentionally integrating teams and perspectives.”</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="projects__title">Projects</h2>
+      <div class="sections">
+        <button data-category="web" class="active">Full-Stack Web Development</button>
+        <button data-category="data">Data Science & Analytics</button>
+      </div>
+
+      <input type="text" id="searchInput" class="hidden" >
+      <ul id="suggestionsList" class="suggestions hidden"></ul>
+
+      <div class="grid hidden" id="projectGrid"></div>
+
+      <div id="modal" class="modal hidden">
+        <div class="modal-content theme-adaptative">
+          <button class="close" aria-label="Cerrar modal">X</button>
+          <header class="modal-header">
+            <div class="carousel-modal">
+              <div class="carousel-wrapper">
+            </div>
+            <h3 id="modalTitle"></h3>
+            <span class="project-category-label" id="modalCategory"></span>
+          </header>
+          <section class="modal-body">
+            <p id="modalDescription"></p>
+            <ul id="modalTechList" class="tech-list"></ul>
+          </section>
+          <footer class="modal-footer">
+            <a id="modalDemo" target="_blank" class="modal-btn demo-btn">🔗 Ver demo</a>
+            <a id="modalCode" target="_blank" class="modal-btn code-btn">💻 Ver código</a>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section hidden">
+      <div class="projects-carousel" id="projectsCarousel"></div>
+      <div class="carousel-controls" id="paginationControls">
+        <button id="prevBtn">⟵</button>
+        <span id="pageIndicator"></span>
+        <button id="nextBtn">⟶</button>
+      </div>
+    </section>
+
+    <section class="container">
+        <div id="carousel">
+          <figure><img src="./assets/img/portfolio.png" alt="portfolio web"></figure>
+          <figure><img src="./assets/img/project_1.png" alt="fortune cookie app"></figure>
+          <figure><img src="./assets/img/project_2.png" alt="weather app"></figure>
+          <figure><img src="./assets/img/project_3.png" alt="rick and morty app"></figure>
+          <figure><img src="./assets/img/project_4.png" alt="user crud"></figure>
+          <figure><img src="./assets/img/pokedex_home.png" alt="pokédex"></figure>
+        </div>
+        <div id="navigation">
+          <button data-increment="-1">⬅</button>
+          <button data-increment="1">➡</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Contact</h2>
+      <div class="confetti__container"></div>
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Contact Information</h3>
+          <p class="contact__info-description">
+            <b>Congratulations!</b> You've reached the end of my portfolio. <br>
+             I hope you enjoyed it and found it useful. <br>
+             I'm always open to new opportunities, changes, and challenges. <br>
+             If you're interested in working with me or have any questions or suggestions, feel free to contact me through my social media or by filling out the form in the contact section. <br>
+             I’ll be happy to support you in whatever you need. <br>
+             With nothing more for now, I sincerely thank you for your time and attention, and I wish you an excellent day. <br>
+             Warm regards! 😄
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/+523323429201?text=Tu%20Mensaje%20De%20Texto" target="_blank"
+                  rel="noreferrer nofollow">Sendme a message on WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:test@correo.com" target="_blank" rel="noreferrer nofollow">
+                  clioanahi@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> Jalisco, México. </span>
+            </div>
+          </address>
+        </div>
+        <div class="contact__form">
+          <h3 class="contact__form-title">Send me a message</h3>
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">E-mail</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Message</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Thank you! I will contact you soon.
+              <button type="reset" id="btn_close-modal">Close</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Clio Salgado</h3>
+        <p class="footer__description">
+          I am a Business Data Science (Big Data) and Full-Stack Web Development student, passionate about technology, knowledge & innovation.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Social Media</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://github.com/Clic-stack" target="_blank"><i class="bx bxl-github"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/cliosalgado/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/clio-salgado-845a93319/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const buttons = document.querySelectorAll('#navigation button');
+    const panelCount = carousel.children.length;
+    let theta = 0;
+    let autoRotate = setInterval(() => {
+      theta += (360 / panelCount);
+      carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
+    }, 5000);
+
+    carousel.addEventListener('mouseenter', () => clearInterval(autoRotate));
+    carousel.addEventListener('mouseleave', () => {
+        autoRotate = setInterval(() => {
+        theta += (360 / panelCount);
+        carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
+      }, 5000);
+    });
+
+    buttons.forEach(button => {
+      button.addEventListener('click', event => {
+        const increment = parseInt(event.target.getAttribute('data-increment'));
+        theta += (360 / panelCount) * increment;
+        carousel.style.transform = `translateZ(-288px) rotateY(${theta}deg)`;
+      });
+    });
+  </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const languageToggle = document.getElementById("language-toggle");
+
+    // Verifica el idioma guardado en localStorage
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage === "es") {
+      languageToggle.checked = true;
+    }
+
+    languageToggle.addEventListener("change", function () {
+      if (this.checked) {
+        // Español
+        localStorage.setItem("language", "es");
+        window.location.href = "/assets/lang/index.html"; // cambia por tu ruta en español
+      } else {
+        // Inglés
+        localStorage.setItem("language", "en");
+        window.location.href = "/index.html"; // cambia por tu ruta en inglés
+      }
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>
+  function scrollInfo(button, direction) {
+    // Encuentra el contenedor más cercano con la clase 'projects__info-carousel-wrapper'
+    const wrapper = button.closest('.projects__info-carousel-wrapper');
+
+    // Dentro del wrapper, busca el carrusel específico
+    const carousel = wrapper.querySelector('.projects__info-carousel');
+
+    // Desplaza el carrusel horizontalmente
+    carousel.scrollBy({
+      left: direction * 300, // Ajusta el valor según el ancho de tus tarjetas
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
+</body>
+</html>
