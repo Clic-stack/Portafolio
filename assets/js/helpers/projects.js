@@ -24,8 +24,8 @@ export const projects = [
       "/assets/img/projects.png"
     ],
     technologies: ["HTML", "CSS", "JavaScript", "Google Fonts", "Boxicons", "EmailJS", "JS Confetti", "GitHub", "Netlify"],
-    demo: "",
-    code: "",
+    demo: "https://portfolio-clio-salgado.netlify.app/#home",
+    code: "https://github.com/Clic-stack/Portafolio",
     featured: true
   },
   {
@@ -35,7 +35,7 @@ export const projects = [
       es: "Galleta de la Fortuna | Conoce tú fortuna"
     },
     description: {
-      en: "An interactive web application that delivers random quotes—ranging from inspirational and humorous to deeply thought-provoking. Curious to see what your fortune cookie reveals today? Share the experience with your closest friends!",
+      en: "An interactive web application that delivers random quotes, ranging from inspirational and humorous to deeply thought-provoking. Curious to see what your fortune cookie reveals today? Share the experience with your closest friends!",
       es: "Aplicación web interactiva capaz de dar frases aleatorias, pueden ser inspiradoras, divertidas o reflexivas. Así que dime, ¿Tienes curiosidad por conocer tu frase en la galleta de la fortuna?, Compártela con tus amigos a través de tu red social favorita."
     },
     resume: {

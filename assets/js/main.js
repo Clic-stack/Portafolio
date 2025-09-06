@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 loader();
 parallax();
+activeMenu();
 resetToHome();
 updateCopyrightYear();
 sendEmail();
-activeMenu();

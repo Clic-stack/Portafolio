@@ -1153,12 +1153,10 @@ input[type="radio"] {
   border-radius: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .modal-content {
-    background: #1e1e1eb9;
-    color: #eee;
-    border: 1px solid #444;
-  }
+.modal-content {
+  background: #1e1e1eb9;
+  color: #eee;
+  border: 1px solid #444;
 }
 
 .container {

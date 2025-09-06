@@ -17,7 +17,10 @@ function activeMenu() {
 					activeLink.classList.remove('active');
 				}
 
-				navbarLinks[index].classList.add('active');
+				if (navbarLinks[index]) {
+					navbarLinks[index].classList.add('active');
+				}
+
 			}
 		});
 	});
