@@ -494,15 +494,15 @@
               <label for="message" class="contact__form-label">Message</label>
               <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
             </div>
-            <dialog id="modal">
-              Thank you! I will contact you soon.
-              <button type="reset" id="btn_close-modal">Close</button>
-            </dialog>
-
+            
             <button type="submit" class="btn contact__form-button">
               Send
             </button>
           </form>
+          <dialog id="confirmationModal" class="confirmation-modal">
+            <p>Thank you! I will contact you soon.</p>
+            <button id="closeModalBtn" class="btn">Close</button>
+          </dialog>
         </div>
       </div>
     </section>

@@ -466,15 +466,14 @@
               <label for="message" class="contact__form-label">Mensaje</label>
               <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
             </div>
-            <dialog id="modal">
-              Gracias! En breve me pondré en contacto contigo
-              <button type="reset" id="btn_close-modal">Cerrar</button>
-            </dialog>
-
             <button type="submit" class="btn contact__form-button">
               Enviar
             </button>
           </form>
+          <dialog id="confirmationModal" class="confirmation-modal">
+            <p>Gracias! Pronto me pondré en contacto contigo.</p>
+            <button id="closeModalBtn" class="btn">Cerrar</button>
+          </dialog>
         </div>
       </div>
     </section>
