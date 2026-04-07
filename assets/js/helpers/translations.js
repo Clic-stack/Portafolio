@@ -20,3 +20,20 @@ export const translationsUI = {
     }
   }
 };
+
+export const emailContent = {
+  es: {
+    subject: "Seguimiento a Solicitud de Contacto en Portafolio Web de Clio Salgado",
+    message: `Hola {{name}}!
+     Gracias por contactarme. 
+     Este correo es para confirmar que he recibido tu mensaje correctamente y me pondré en contacto contigo lo antes posible para dar seguimiento a tú solicitud.`,
+    fired: "Saludos!"
+  },
+  en: {
+    subject: `Follow-up: Contact Request Clio Salgado's Web Portfolio`,
+    message: `Hi {{name}}!
+     Thank you for reaching out! 
+     This email is to confirm that I have successfully received your message, and I will get back to you as soon as possible to follow up on your request.`, 
+    fired: "Best regards"
+  }
+};

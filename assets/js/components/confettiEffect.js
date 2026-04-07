@@ -1,8 +1,8 @@
-// Inicialización de la función para lanzar confeti
+// 1. Tu función de disparo (usa el objeto 'confetti' de tsparticles)
 function launchConfetti() {
     const duration = 15 * 250;
     const animationEnd = Date.now() + duration;
-    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 1000 };
 
     function randomInRange(min, max) {
         return Math.random() * (max - min) + min;
@@ -17,7 +17,6 @@ function launchConfetti() {
 
         const particleCount = 50 * (timeLeft / duration);
 
-        // Disparo desde los extremos inferiores
         confetti(
             Object.assign({}, defaults, {
                 particleCount,
@@ -33,18 +32,26 @@ function launchConfetti() {
     }, 250);
 }
 
-// Función para detectar si el usuario llega a la sección de contacto
-function checkContactSection() {
-    const contactSection = document.querySelector("#contact");
-    if (!contactSection) return; // Evita errores si la sección no existe
+// 2. El Observador Inteligente (Reemplaza window.addEventListener("scroll", ...))
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.6 // Solo explota cuando el 60% de la sección de contacto sea visible
+};
 
-    const rect = contactSection.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        launchConfetti(); // Lanza el confeti
-        window.removeEventListener("scroll", checkContactSection); // Evita múltiples activaciones
-    }
+const confettiObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            launchConfetti();
+            // Esto es CLAVE: deja de observar para que no explote cada que suban y bajen
+            observer.unobserve(entry.target); 
+        }
+    });
+}, observerOptions);
+
+// 3. Activación
+const target = document.querySelector("#contact");
+if (target) {
+    confettiObserver.observe(target);
 }
-
-// Escuchar el evento de scroll para disparar confeti al llegar a contacto
-window.addEventListener("scroll", checkContactSection);
 

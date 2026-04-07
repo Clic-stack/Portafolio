@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Clio Salgado" />
-  <meta name="description" content="Business DataScience(Big Data) & Full-Stack Web Developer Student" />
-  <meta name="keywords" content="Web Developer, Full-Stack Web Developer, Big Data, DataScience, Frontend/ Backend, Student" />
+  <meta name="description" content="Business DataScience(Big Data) Student & Full-Stack Developer" />
+  <meta name="keywords" content="Developer, Full-Stack Developer, Big Data, DataScience, Frontend, Backend, Student, Clio, Salgado" />
   <meta name="theme-color" content="#09f" />
   <!-- Fuente  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kaushan+Script&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- Iconos  -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <title>Portfolio&Projects</title>
+  <title>Clio Salgado - Web Portfolio</title>
   <link rel="icon" href="assets/img/logo.svg" type="image/svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script type="module" src="assets/js/main.js"></script>
@@ -32,17 +32,29 @@
 
 <body>
   <!-- Loader -->
-  <div class="loader">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
-      <path fill="currentColor"
-        d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
-      </path>
-    </svg>
+  <div class="loader-wrapper">
+    <div class="loader-content">
+      <div class="loader-data-network">
+        <svg viewBox="0 0 100 100" class="network-svg">
+          <path d="M20 50 L50 20" class="connection" />
+          <path d="M20 50 L50 80" class="connection" />
+          <path d="M50 20 L80 50" class="connection" />
+          <path d="M50 80 L80 50" class="connection" />
+          <path d="M50 20 L50 80" class="connection" />
+        
+          <circle cx="20" cy="50" r="3" class="node" />
+          <circle cx="50" cy="20" r="3" class="node" />
+          <circle cx="50" cy="80" r="3" class="node" />
+          <circle cx="80" cy="50" r="3" class="node" />
+        </svg>
+        <div class="core-pulse"></div>
+      </div>
+      <p class="loader-text">Analizing data...</p>
+    </div>
   </div>
 
   <header class="header">
     <nav class="navbar grid--container flex--container">
-      <a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>Clio's</a>
       <div id="nav" class="navbar__menu">
         <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
         <ul class="navbar__list flex--container">
@@ -56,7 +68,7 @@
             <a class="navbar__link" href="#skills">Skills</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#projects">Portfolio & Projects</a>
+            <a class="navbar__link" href="#projects">Portfolio Projects</a>
           </li>
           <li class="navbar__item">
             <a class="navbar__link" href="#contact">Contact</a>
@@ -72,9 +84,8 @@
             <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
           </label>
         </div>
-
         <div class="navbar__toggle--language flex--container">
-          <input type="checkbox" name="language" id="language-toggle" class="navbar__toggle--language-input" />
+          <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input" />
           <label for="language-toggle" class="navbar__toggle--language-label"></label>
         </div>
       </div>
@@ -86,86 +97,118 @@
 
   <main>
     <section id="home" class="home">
-      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
-      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
-      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
-      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
-      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
-      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
-      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
-      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
-      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
-      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
-      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
-
       <div class="home__container grid--container">
 
         <div class="home__image">
-          <img src="assets/img/picture1.png" alt="profile photo" title="Clio Salgado" />
+          <div class="data-terminal">
+            <div class="terminal__header">
+              <div class="terminal__dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal__title">clio_analytics_v1.0.py</span>
+            </div>
+
+            <div class="terminal__window">
+              <div class="terminal__code" id="terminalCode">
+                </div>
+  
+              <div class="network-viz">
+                <div class="node node-1"></div>
+                <div class="node node-2"></div>
+                <div class="node node-3"></div>
+                <div class="node node-4"></div>
+                <svg class="network-svg">
+                  <line x1="20%" y1="30%" x2="50%" y2="70%" />
+                  <line x1="50%" y1="70%" x2="80%" y2="40%" />
+                  <line x1="80%" y1="40%" x2="20%" y2="30%" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
 
         <ul class="home__social flex--container">
           <li class="home__social-item">
-            <a class="home__social-link" href="https://www.linkedin.com/in/clio-salgado-845a93319/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a class="home__social-link" href="https://www.linkedin.com/in/clio-salgado-845a93319/" target="_blank" title="Connect with me on LinkedIn"><i class="bx bxl-linkedin"></i></a>
           </li>
           <li class="home__social-item">
-            <a class="home__social-link" href="https://wa.me/+523323429201?text=Tu%20Mensaje%20De%20Texto" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            <a class="home__social-link" href="https://wa.me/+523323429201" target="_blank" title="Chat with me on WhatsApp"><i class="bx bxl-whatsapp"></i></a>
           </li>
           <li class="home__social-item">
-            <a class="home__social-link" href="https://github.com/Clic-stack" target="_blank"><i class="bx bxl-github"></i></a>
+            <a class="home__social-link" href="https://github.com/Clic-stack" target="_blank" title="View GitHub Repos"><i class="bx bxl-github"></i></a>
           </li>
           <li class="home__social-item">
-            <a class="home__social-link" href="mailto:clioanahi@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+            <a class="home__social-link" href="mailto:clioanahi@gmail.com" target="_blank" title="Send Email"><i class="bx bx-envelope"></i></a>
           </li>
         </ul>
 
         <div class="home__info">
-          <h1 class="home__title">Hey! I'm Clio</h1>
+          <h1 class="home__title">CLIO SALGADO</h1>
+          <h2 class="home__subtitle">Full Stack Developer | Business Data Science Student</h2>
+          <div class="badge-container">
+            <span class="badge--student">Degree In-Progress</span>
+          </div>
           <p class="home__description">
-            I’m a Business Data Science (Big Data) student with hands-on experience and a specialization in Full-Stack Web Development, along with over seven years of professional experience in administrative, operational, and quality management roles. I am currently transitioning into the tech sector, combining my analytical skills with a strong passion for creating digital solutions.
+            "<b>Full-Stack Developer</b> with an analytical focus on <b>Business Data Science</b>. Backed by <b>7 years of professional experience leading teams</b> in operations and quality management, I have dedicated the last <b>18 months to intensive technical specialization</b>."
           </p>
-        </div>
-
-        <div class="home__buttons">
-          <a class="btn btn--primary" href="assets/img/Resume_Clio-Salgado.pdf" title="Download CV" download="Resume_Clio-Salgado" rel="noreferrer nofollow">
-            Download CV
-          </a>
+          <div class="home__buttons">
+            <a class="btn btn--primary" href="assets/img/Professional_Resume_Clio.pdf" download="Resume_Clio-Salgado">
+              Download CV
+            </a>
+          </div>
         </div>
       </div>
-
     </section>
 
-    <section id="about" class="about section">
-      <h2 class="section__title">About Me</h2>
+    <section id="about" class="about-section">
+      <div class="container-about">
+    
+        <div class="about-text-content">
+          <h2 class="section-title">About Me</h2>
+          <p class="intro-text">Hi! I'm <strong>Clio</strong>. A technology enthusiast living in Guadalajara.</p>
+      
+          <p class="description">
+            For 7 years I led, managed and supervised teams in operations and quality management roles, developing a sharp eye for process optimization. Today, I am transforming that experience into my greatest advantage within the <strong>Data Science</strong>.
+          </p>
+          <p class="description">
+            My profile is <strong>hybrid</strong>: I understand the real challenges of organizations and I have the technical tools (<strong>Full Stack, Analytics and Data Science</strong>) to solve them. My goal is to turn data complexity into strategic clarity.
+          </p>
 
-      <div class="about__container grid--container">
-        <p class="about__description">
-          Hello, my name is Clio. I’m 28 years old and originally from the State of Mexico. I’ve had the opportunity to live in three different states across the country, and for the past six years, I’ve been residing in Guadalajara, Jalisco. <br>
-
-          <br>I have a solid background in administrative, operational, and quality management roles. I’m currently transitioning into the tech sector, pursuing a Bachelor's degree in Business Data Science (Big Data), along with a specialization in Full-Stack Web Development and Computer Science. <br>
-
-          <br>Although I haven’t yet completed my studies, I’ve already developed and deployed several web projects and applications. I continue to expand my knowledge and strengthen my practical experience in both Data Science and Full-Stack Web Development. <br>
-
-          <br>At this stage in my career, my main goal is to apply my skills, strengths, and technical knowledge to real-world projects in Technology, Data Science, or Web Development.
-        </p>
-
-        <div class="about__cards flex--container">
-          <!--Card 1 -->
-          <div class="about__card">
-            <img class="about__card--img" src="assets/img/me3.jpg" alt="Clio in TalentLand"
-              title="Locking and reaching targets" />
+          <div class="mini-timeline">
+            <div class="timeline-item">
+              <span class="year">2017 - 2021</span>
+              <span class="milestone">Administration & Administrative Leadership, Operations, Quality Control & Management, Team Leadership</span>
+            </div>
+            <div class="connector"></div>
+            <div class="timeline-item">
+              <span class="year">2022</span>
+              <span class="milestone">Operations</span>
+            </div>
+            <div class="connector"></div>
+            <div class="timeline-item active">
+              <span class="year">2024</span>
+              <span class="milestone">Data Science <br> & <br> Full-Stack Dev</span>
+            </div>
           </div>
-          <!--Card 2 -->
-          <div class="about__card">
-            <img class="about__card--img" src="assets/img/me2.jpg" alt="Clio in Google stand"
-              title="Ongoing training" />
+
+          <div class="badges-container">
+            <span class="badge-item">📍 Guadalajara, MX</span>
+            <span class="badge-item">💻 Full-Stack Dev (Specialization)</span>
+            <span class="badge-item">🎓 B.S. in Data Science for Business (In progress)</span>
           </div>
-          <!--Card 3 -->
-          <div class="about__card">
-            <img class="about__card--img" src="assets/img/me.jpg" alt="Clío anywhere"
-              title="Enjoying achievments" />
+      
+          <a href="#contact" class="btn-cta">Let's talk data!</a>
+        </div>
+
+        <div class="about-visual-content">
+          <div class="image-wrapper">
+            <img src="/assets/img/me2.jpg" alt="Clio en evento de tecnología" class="main-photo">
+            <div class="floating-tag">Data & Code</div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -174,196 +217,354 @@
 
       <div class="skills__container grid--container">
         <p class="skills__description flex--container">
-          In today’s increasingly competitive world, we cultivate skills that empower us to pursue greater opportunities with confidence.
+          In an increasingly competitive world, we cultivate the skills necessary to seize the best opportunities.
         </p>
 
         <div class="skills__wrapper flex--container">
           <div class="skills__cards flex--container">
-            <!--Card 1 -->
             <details class="skills__cards-container" name="moreInfo" open>
               <summary class="skills__cards-title flex--container">
                 <i class="bx bxl-html5 flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">HTML</h3>
-
+                <h3 class="skills__card-title">HTML5</h3>
                 <p class="skills__card-description">
-                  HyperText Markup Language (HTML) is a language used to create and structure web pages. It is the standard language for documents intended to be displayed on the web, thanks to its semantic nature, which allows elements to be defined through tags. These tags indicate how content should be presented, and HTML is often complemented by CSS and JavaScript to achieve a more complete visual and functional experience.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title">
-                      <b>Skills Developed:</b>
-                    </li>
-                    <li class="skills__card-list--item">
-                      Structuring content on a web page using tags that define elements such as text, images, videos, links, tables, lists, embedded media, and forms.
-                    </li>
-                    <li class="skills__card-list--item">
-                      Understanding and applying metadata in website development to improve SEO (Search Engine Optimization) performance.
-                    </li>
-                  </ul>
+                  <b>"The structural foundation of any website; it organizes content to ensure seamless comprehension for both users and search engines."</b>
                 </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Semantic Structure for Accessibility (A11y) and SEO.</li>
+                  <li class="skills__card-list--item">Client-side form data validation.</li>
+                  <li class="skills__card-list--item">Metadata optimization for search engines.</li>
+                </ul>
               </div>
             </details>
-            <!--Card 2 -->
+
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
                 <i class="bx bxl-css3 flex--container"></i>
+                <i class="bx bxl-sass flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">CSS3</h3>
-
+                <h3 class="skills__card-title">CSS3 / Sass</h3>
                 <p class="skills__card-description">
-                  Cascading Style Sheets (CSS) is a language used to design and create visually appealing web pages for users. It is used to describe the presentation of documents written in HTML or XML. Therefore, it’s important to highlight that CSS is one of the core technologies of the World Wide Web, alongside HTML and JavaScript.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title">
-                      <b>Skills Developed:</b>
-                    </li>
-                    <li class="skills__card-list--item">
-                      Use and application of various CSS properties to style colors, typography, links, lists, overflow content, images, positioning, and stacking.
-                    </li>
-                    <li class="skills__card-list--item">
-                      Knowledge of the box model, visibility, measurement units, Grid, Flexbox, CSS variables, and media queries.
-                    </li>
-                  </ul>
+                  <b>"CSS3 is the aesthetic layer that brings design to life, while Sass provides detailed control to create unique and adaptive visual experiences."</b>
                 </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Responsive Design (Mobile First).</li>
+                  <li class="skills__card-list--item">Modular and scalable architecture with Sass.</li>
+                  <li class="skills__card-list--item">Theme Management (Light/Dark Mode).</li>
+                </ul>
               </div>
             </details>
-            <!--Card 3 -->
+
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
                 <i class="bx bxl-javascript flex--container"></i>
+                <i class="bx bxl-typescript flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">Javascript Backend</h3>
-
+                <h3 class="skills__card-title">JavaScript (ES6+) & TypeScript</h3>
                 <p class="skills__card-description">
-                  JavaScript is a cross-platform, object-oriented programming language used to make web pages interactive. It is a prototype-based language with dynamic typing, and it supports event-driven, functional, and imperative programming styles. JavaScript is widely used in web development, server-side applications, and mobile app development.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title">
-                      <b>Skills Developed:</b>
-                    </li>
-                    <li class="skills__card-list--item">
-                      Knowledge and application of the terminal, variables, data types (primitive and structured), functions, methods in primitive types (numbers and strings), array methods, object methods, basic and comparison operators, type coercion, loops, conditionals, and logical operators.
-                    </li>
-                  </ul>
+                  <b>"JavaScript is the brain behind interactivity, whereas TypeScript adds a layer of safety, preventing errors before they occur."</b>
                 </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">DOM manipulation and modern logic.</li>
+                  <li class="skills__card-list--item">RESTful API consumption.</li>
+                  <li class="skills__card-list--item">Development of dynamic components.</li>
+                </ul>
               </div>
             </details>
-            <!--Card 4 -->
-            <details class="skills__cards-container" name="moreInfo">
-              <summary class="skills__cards-title flex--container">
-                <i class="bx bxl-javascript flex--container"></i>
-              </summary>
-              <div class="skills__card-container">
-                <h3 class="skills__card-title">Javascript Frontend</h3>
 
-                <p class="skills__card-description">
-                  JavaScript is a cross-platform, object-oriented programming language used to bring life, interactivity, and dynamism to websites and web pages.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title">
-                      <b>Skills Developed:</b>
-                    </li>
-                    <li class="skills__card-list--item">
-                      Knowledge and application of transitions, animations, advanced functions (constructors, higher-order, factory, recursive), DOM manipulation, and callbacks.
-                    </li>
-                  </ul>
-                </p>
-              </div>
-            </details>
-            <!--Card 5 -->
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
                 <i class="bx bxl-react flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">React</h3>
-
+                <h3 class="skills__card-title">React.js</h3>
                 <p class="skills__card-description">
-                  React enables the creation of modular and scalable interfaces through reusable components, efficient state management, and optimized rendering with the virtual DOM. Its declarative approach and robust ecosystem make it a key tool for developing modern web applications, especially in SPA environments.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title">
-                      <b>Skills Developed:</b>
-                    </li>
-                    <li class="skills__card-list--item">
-                      Application of best practices in React using JSX, modular and external styles, reusable components, destructured props, and efficient state management. Implementation of conditional logic, computed states, and smooth interaction with the virtual DOM. Mastery of immutability principles, modern operators such as spread and optional chaining, and use of functional methods for dynamic rendering.
-                    </li>
-                  </ul>
+                  <b>"A tool used to build modern interfaces, allowing for reusable components that make development faster and more organized."</b>
                 </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Complex state management.</li>
+                  <li class="skills__card-list--item">Reusable and modular component creation.</li>
+                  <li class="skills__card-list--item">Efficient RESTful API integration.</li>
+                </ul>
               </div>
             </details>
-            <!--Card 6 -->
+
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
-                <i class="bx bxl-react flex--container"></i>
+                <i class="bx bxl-tailwind-css flex--container"></i>
+                <i class="bx bxl-bootstrap flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">React</h3>
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title">
-                      <b>Skills Developed:</b>
-                    </li>
-                    <li class="skills__card-list--item">
-                      Forms with controlled and uncontrolled inputs; the useEffect hook; data fetching; event listeners; ES Modules; API calls; loading state handling and error management; hooks such as useMemo and useCallback; BEM methodology; and styling with Sass.
-                    </li>
-                    <li class="skills__card-list--item">
-                      The useRef hook; creation of custom hooks; functional components; use of the children prop; implementation of modals; and error handling.
-                    </li>
-                    <li class="skills__card-list--item">
-                      The useReducer hook; Context API with Provider and Consumer; the useContext hook; React Router; route protection through authentication; global state management with Zustand; and use of Local Storage.
-                    </li>
-                  </ul>
+                <h3 class="skills__card-title">Tailwind CSS & Bootstrap</h3>
+                <p class="skills__card-description">
+                  <b>"Design libraries utilized for agile prototyping and rapid delivery when projects require immediate standardization."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Fast responsive design implementation.</li>
+                  <li class="skills__card-list--item">Use of pre-defined components.</li>
+                  <li class="skills__card-list--item">Adaptation of base styles.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-nodejs flex--container"></i>
+                <i class="bx bx-server flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Node.js & Express</h3>
+                <p class="skills__card-description">
+                  <b>"They build the application's engine, efficiently managing communication between the user and the database."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Robust and scalable API development.</li>
+                  <li class="skills__card-list--item">Middleware management for business logic and security.</li>
+                  <li class="skills__card-list--item">SQL and NoSQL database integration.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-python flex--container"></i>
+                <i class="bx bx-bar-chart-alt-2 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Python (Pandas)</h3>
+                <p class="skills__card-description">
+                  <b>"A powerful tool for Data Science. I transform raw data into valuable insights for informed decision-making."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Cleaning, transformation, and normalization of datasets.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxs-data flex--container"></i>
+                <i class="bx bx-network-chart flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Advanced SQL & Sequelize</h3>
+                <p class="skills__card-description">
+              <b>"Design and querying of relational databases, employing Sequelize to connect code with data in an elegant and secure manner."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Relational database design and normalization.</li>
+                  <li class="skills__card-list--item">Optimization of complex queries (Joins, Indexing).</li>
+                  <li class="skills__card-list--item">Object-Relational Mapping (ORM) for security and speed.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bx-shield-quarter flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Authentication (JWT)</h3>
+                <p class="skills__card-description">
+                  <b>"A security system that identifies users privately, protecting their information across every session."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Secure login implementation.</li>
+                  <li class="skills__card-list--item">Private route protection.</li>
+                  <li class="skills__card-list--item">Access token management.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bx-check-shield flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Testing (Jest & Supertest)</h3>
+                <p class="skills__card-description">
+                  <b>"Ensuring every piece of code functions exactly as expected, preventing failures in the final product."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Unit testing for component logic and functions.</li>
+                  <li class="skills__card-list--item">Integration testing for API endpoints.</li>
+                  <li class="skills__card-list--item">Quality Assurance (QA) and production error prevention.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-github flex--container"></i>
+                <i class="bx bx-terminal flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Git, GitHub & Terminal</h3>
+                <p class="skills__card-description">
+                  <b>"Essential tools for version control and efficient management of the technical workflow."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">Collaboration and repository management.</li>
+                  <li class="skills__card-list--item">Command-line automation.</li>
+                  <li class="skills__card-list--item">Continuous Deployment (Netlify, Render, Vercel).</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bx-code-alt flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Other Tools (Postman, NetLogo, C++)</h3>
+                <p class="skills__card-description">
+                  <b>"Specialized software used to test APIs or perform complex behavioral simulations."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Core Competencies:</b></li>
+                  <li class="skills__card-list--item">API testing and documentation (Postman).</li>
+                  <li class="skills__card-list--item">Complex systems simulation (NetLogo).</li>
+                  <li class="skills__card-list--item">Low-level programming (C++).</li>
+                </ul>
               </div>
             </details>
           </div>
         </div>
+
         <div class="skills__tags flex--container">
-          <h3 class="skills__tags-title">Habilidades Blandas</h3>
+          <h3 class="skills__tags-title">Soft Skills</h3>
           <div class="skills__tags-container flex--container">
-            <div class="flip-card">
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Perseverance. Push it for read description.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Perseverance</span>
-                <span class="skills__tag-back">“I build with intention, learn with purpose, and evolve with clarity. Every project reflects my commitment to excellence through strategic iterations, conscious decisions, and continuous improvement.”</span>
+                <div class="skills__tag">
+                  <span>Perseverance</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“I build with intention, learn with purpose, and evolve with clarity. A focus on excellence through continuous improvement and conscious decision-making in every line of code.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Adaptability. Push it for read description.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Adaptability</span>
-                <span class="skills__tag-back">“I evolve with speed and precision, integrating technologies and methodologies that respond to both context and user needs. Every solution I develop reflects technical flexibility and strategic vision.”</span>
+                <div class="skills__tag">
+                  <span>Adaptability</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Evolving with speed and precision. Agile integration of new methodologies and technologies based on user and business needs.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card" 
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Teamwork. Push it for read description.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Teamwork</span>
-                <span class="skills__tag-back">“I integrate skills, languages, and styles to build technical solutions that combine modularity and diversity. Collaboration means achieving together what no individual profile could accomplish alone.”</span>
+                <div class="skills__tag">
+                  <span>Teamwork</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Integrating skills, languages, and styles. Collaboration means achieving together what no single profile could accomplish alone.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Analytical & Creative Thinking. Push it for read description.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Analytical, Logical, and Creative Thinking</span>
-                <span class="skills__tag-back">“I design solutions that solve with precision and communicate with intention. Every component reflects functional excellence, structural logic, and aesthetic sensitivity.”</span>
+                <div class="skills__tag">
+                  <span>Analytical & Creative Thinking</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Designing solutions that resolve with precision and communicate with intent. Every component reflects functional excellence and structural logic.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Lifelong Learning. Push it for read description.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Continuous and Self-Directed Learning</span>
-                <span class="skills__tag-back">“I learn with depth and speed, integrating technologies and methodologies that drive every technical decision. Learning is my constant practice to evolve, iterate, and position myself internationally.”</span>
+                <div class="skills__tag">
+                  <span>Lifelong Learning</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Deep and rapid learning. A self-taught capacity to master emerging tools and position myself within the global market.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Problem Solving. Push it for read description.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Problem Solving</span>
-                <span class="skills__tag-back">“I turn errors into opportunities to strengthen architecture, enhance user experience, and refine technical narrative. My approach combines logic, sensitivity, and applied creativity.”</span>
+                <div class="skills__tag">
+                  <span>Problem Solving</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Transforming technical failures into robust architectural solutions through logical and creative thinking.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Result-Oriented. Push it for read description.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Results-Oriented Mindset</span>
-                <span class="skills__tag-back">“I make technical and narrative decisions with clear intention and strategic focus. Every solution I develop aims for real impact, tangible value, and both functional and aesthetic excellence.”</span>
+                <div class="skills__tag">
+                  <span>Result-Oriented</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Making technical and narrative decisions with clear intent and strategic focus to generate tangible value and real impact.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Assertive Communication. Push it for read description.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Assertive and Empathetic Communication</span>
-                <span class="skills__tag-back">“I collaborate with clarity and sensitivity at every stage of development. My interfaces honor both technical logic and human experience, intentionally integrating teams and perspectives.”</span>
+                <div class="skills__tag">
+                  <span>Assertive Communication</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Collaborating with clarity and sensitivity throughout every development stage, respecting both technical logic and human experience.”</p>
+                </div>
               </div>
             </div>
           </div>
@@ -374,18 +575,18 @@
     <section id="projects">
       <h2 class="projects__title">Projects</h2>
       <div class="sections">
-        <button data-category="web" class="active">Full-Stack Web Development</button>
-        <button data-category="data">Data Science & Analytics</button>
+        <button data-category="web" class="active">Full Stack Web Development</button>
+        <button data-category="data">Analytics & Data Science</button>
       </div>
 
-      <input type="text" id="searchInput" class="hidden" >
+      <input type="text" id="searchInput" class="hidden">
       <ul id="suggestionsList" class="suggestions hidden"></ul>
 
       <div class="grid hidden" id="projectGrid"></div>
 
-      <div id="modal" class="modal hidden">
+      <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-content theme-adaptative">
-          <button class="close" aria-label="Cerrar modal">X</button>
+          <button class="close" aria-label="Close modal">X</button>
           <header class="modal-header">
             <div class="carousel-modal">
               <div class="carousel-wrapper">
@@ -398,8 +599,8 @@
             <ul id="modalTechList" class="tech-list"></ul>
           </section>
           <footer class="modal-footer">
-            <a id="modalDemo" target="_blank" class="modal-btn demo-btn">🔗 Ver demo</a>
-            <a id="modalCode" target="_blank" class="modal-btn code-btn">💻 Ver código</a>
+            <a id="modalDemo" target="_blank" class="modal-btn demo-btn">🔗 Watch Demo</a>
+            <a id="modalCode" target="_blank" class="modal-btn code-btn">💻 Watch Code</a>
           </footer>
         </div>
       </div>
@@ -416,12 +617,12 @@
 
     <section class="container">
         <div id="carousel">
-          <figure><img src="./assets/img/portfolio.png" alt="portfolio web"></figure>
-          <figure><img src="./assets/img/project_1.png" alt="fortune cookie app"></figure>
-          <figure><img src="./assets/img/project_2.png" alt="weather app"></figure>
-          <figure><img src="./assets/img/project_3.png" alt="rick and morty app"></figure>
-          <figure><img src="./assets/img/project_4.png" alt="user crud"></figure>
-          <figure><img src="./assets/img/pokedex_home.png" alt="pokédex"></figure>
+          <figure tabindex="0" data-index="0"><img src="/assets/img/portfolio.png" alt="Portafolio web"></figure>
+          <figure tabindex="0" data-index="4"><img src="/assets/img/project_4.png" alt="CRUD de Usuarios"></figure>
+          <figure tabindex="0" data-index="5"><img src="/assets/img/project_5.png" alt="Pokédex"></figure>
+          <figure tabindex="0" data-index="6"><img src="/assets/img/gallery_movies.png" alt="GalleryMovies"></figure>
+          <figure tabindex="0" data-index="7"><img src="/assets/img/auth-mailer.png" alt="Auth-Mailer"></figure>
+          <figure tabindex="0" data-index="8"><img src="/assets/img/booking.png" alt="BookingApp"></figure>
         </div>
         <div id="navigation">
           <button data-increment="-1">⬅</button>
@@ -540,74 +741,167 @@
     <p class="footer__copy"></p>
   </footer>
 
-  <script>
+  <script type="module">
+    import { projects } from './assets/js/helpers/projects.js';
+    import { openModal } from './assets/js/helpers/modal.js';
+
     const carousel = document.getElementById('carousel');
     const buttons = document.querySelectorAll('#navigation button');
     const panelCount = carousel.children.length;
     let theta = 0;
-    let autoRotate = setInterval(() => {
-      theta += (360 / panelCount);
-      carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
-    }, 5000);
+    let autoRotate;
 
-    carousel.addEventListener('mouseenter', () => clearInterval(autoRotate));
-    carousel.addEventListener('mouseleave', () => {
-        autoRotate = setInterval(() => {
+    // --- FUNCIÓN DE ROTACIÓN REUTILIZABLE ---
+    const rotateCarousel = () => {
+      if (!carousel.parentElement.classList.contains('hidden')) {
         theta += (360 / panelCount);
         carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
-      }, 5000);
+      }
+    };
+
+    // Modificación en las funciones de control
+    const startAutoRotate = () => {
+      // Limpieza preventiva: si ya hay un intervalo, lo borramos antes de crear otro
+      if (autoRotate) clearInterval(autoRotate); 
+      autoRotate = setInterval(rotateCarousel, 3000);
+    };
+
+    const stopAutoRotate = () => {
+      clearInterval(autoRotate);
+      autoRotate = null; // Limpiamos la referencia
+    };
+
+    startAutoRotate();
+
+    // --- LÓGICA DE NAVEGACIÓN INTELIGENTE POR TECLADO ---
+    const figures = carousel.querySelectorAll('figure');
+
+    figures.forEach((figure, index) => {
+      // 1. Acción de abrir el proyecto
+      const handleOpenProject = () => {
+        const projectIndex = figure.getAttribute('data-index');
+        const project = projects[projectIndex];
+        if (project) openModal(project);
+      };
+
+      figure.addEventListener('click', handleOpenProject);
+
+      figure.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleOpenProject();
+        }
+      });
+
+      // 2. LOGICA CLAVE: Rotar el carrusel al recibir el foco
+      figure.addEventListener('focus', () => {
+        // Detiene la rotación automática para que no "luche" con el usuario
+        stopAutoRotate();
+
+        // Calculo del ángulo exacto para este panel
+        // Intención de que el panel seleccionado esté en 0 grados (frente al usuario)
+        // La fórmula es: -(ángulo de cada panel * índice)
+        const anglePerPanel = 360 / panelCount;
+        theta = -(anglePerPanel * index);
+
+        // Aplica la rotación
+        carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
+      });
+
+      // 3. Reanudar rotación automática cuando el usuario sale del carrusel
+      figure.addEventListener('blur', (e) => {
+        // Solo se reanuda si el nuevo elemento enfocado NO es otra figura del carrusel
+        if (!e.relatedTarget || e.relatedTarget.tagName !== 'FIGURE') {
+            startAutoRotate();
+        }
+      });
     });
 
+    // --- EVENTOS DE MOUSE PARA EL CARRUSEL ---
+    carousel.addEventListener('mouseenter', stopAutoRotate);
+    carousel.addEventListener('mouseleave', (e) => {
+      // Verificamos que el foco no esté en una figura antes de reanudar
+      // Esto evita que el mouse reactive la rotación si el usuario está usando el teclado
+      if (document.activeElement.tagName !== 'FIGURE') {
+        startAutoRotate();
+      }
+    });
+
+    // --- EVENTOS DE BOTONES ---
     buttons.forEach(button => {
       button.addEventListener('click', event => {
-        const increment = parseInt(event.target.getAttribute('data-increment'));
-        theta += (360 / panelCount) * increment;
-        carousel.style.transform = `translateZ(-288px) rotateY(${theta}deg)`;
+        // Al hacer click manual, es buena práctica resetear el intervalo
+        stopAutoRotate(); 
+        
+        const increment = parseInt(event.currentTarget.getAttribute('data-increment'));
+        theta -= (360 / panelCount) * increment;
+        carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
+        
+        // Reanudamos solo si el mouse no está encima después del click
+        // o si no hay un elemento enfocado
+        startAutoRotate(); 
+      });
+    });
+
+    // --- VIGILANTE DEL MODAL (MutationObserver) ---
+    const modalTarget = document.querySelector('.modal'); 
+
+    if (modalTarget) {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.attributeName === 'class' || mutation.attributeName === 'style') {
+            const isHidden = modalTarget.classList.contains('hidden') || modalTargetstyledisplay ==='none';
+                
+            if (isHidden) {
+              // --- LA CLAVE ESTÁ AQUÍ ---
+              // Si el elemento enfocado es una figura, le quitamos el foco
+              if (document.activeElement.tagName === 'FIGURE') {
+                  document.activeElement.blur(); 
+              }
+
+              const isMouseOver = carousel.matches(':hover');
+              // Ahora esta validación pasará porque acabamos de hacer .blur()
+              if (!isMouseOver) {
+                  startAutoRotate();
+              }
+            }
+          }
+        });
+      });
+      observer.observe(modalTarget, { attributes: true });
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const languageToggle = document.getElementById("language-toggle");
+    
+      // Sincronizar el toggle visual
+      const savedLanguage = localStorage.getItem("language");
+      languageToggle.checked = (savedLanguage === "es");
+
+      languageToggle.addEventListener("change", function () {
+        const newLang = this.checked ? "es" : "en";
+        localStorage.setItem("language", newLang);
+
+        // --- EL TRUCO: Guardar el ID de la sección actual ---
+        // Busca qué sección está en la URL (ej. #about-me)
+        if (window.location.hash) {
+          sessionStorage.setItem("redirectSection", window.location.hash);
+        }
+
+        // Redirigir a rutas originales
+        window.location.href = (newLang === "es") ? "/assets/lang/index.html" : "/index.html";
       });
     });
   </script>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const languageToggle = document.getElementById("language-toggle");
-
-    // Verifica el idioma guardado en localStorage
-    const savedLanguage = localStorage.getItem("language");
-    if (savedLanguage === "es") {
-      languageToggle.checked = true;
-    }
-
-    languageToggle.addEventListener("change", function () {
-      if (this.checked) {
-        // Español
-        localStorage.setItem("language", "es");
-        window.location.href = "/assets/lang/index.html"; // cambia por tu ruta en español
-      } else {
-        // Inglés
-        localStorage.setItem("language", "en");
-        window.location.href = "/index.html"; // cambia por tu ruta en inglés
-      }
-    });
-  });
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-<script>
-  function scrollInfo(button, direction) {
-    // Encuentra el contenedor más cercano con la clase 'projects__info-carousel-wrapper'
-    const wrapper = button.closest('.projects__info-carousel-wrapper');
 
-    // Dentro del wrapper, busca el carrusel específico
-    const carousel = wrapper.querySelector('.projects__info-carousel');
-
-    // Desplaza el carrusel horizontalmente
-    carousel.scrollBy({
-      left: direction * 300, // Ajusta el valor según el ancho de tus tarjetas
-      behavior: 'smooth'
-    });
-  }
-</script>
-
+<div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+  <button class="lightbox-close" id="closeLightboxBtn" aria-label="Cerrar imagen expandida">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
 
 </body>
 </html>

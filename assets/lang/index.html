@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Clio Salgado" />
-  <meta name="description" content="Estudiante de Ciencias de Datos para Negocios(Big Data) & Desarrollo Web Full-Stack" />
-  <meta name="keywords" content="Desarrollador Web, Desarrollador Web Full-Stack, BigData, Cientifico de Datos, Frontend/ Backend, Estudiante" />
+  <meta name="description" content="Estudiante de Ciencias de Datos para Negocios(Big Data) & Desarrollador Web Full-Stack" />
+  <meta name="keywords" content="Desarrollador, Desarrollador Full-Stack, BigData, Cientifico de Datos, Frontend, Backend, Estudiante, Clio, Salgado" />
   <meta name="theme-color" content="#09f" />
   <!-- Fuente  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
   <!-- Iconos  -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <title>Portafolio & Proyectos</title>
+  <title>Clio Salgado - Portafolio Web</title>
 
   <link rel="icon" href="/assets/img/logo.svg" type="image/svg" />
   <link rel="stylesheet" href="../css/style.css" />
@@ -36,17 +36,29 @@
 
 <body>
   <!-- Loader -->
-  <div class="loader">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
-      <path fill="currentColor"
-        d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
-      </path>
-    </svg>
+  <div class="loader-wrapper">
+    <div class="loader-content">
+      <div class="loader-data-network">
+        <svg viewBox="0 0 100 100" class="network-svg">
+          <path d="M20 50 L50 20" class="connection" />
+          <path d="M20 50 L50 80" class="connection" />
+          <path d="M50 20 L80 50" class="connection" />
+          <path d="M50 80 L80 50" class="connection" />
+          <path d="M50 20 L50 80" class="connection" />
+        
+          <circle cx="20" cy="50" r="3" class="node" />
+          <circle cx="50" cy="20" r="3" class="node" />
+          <circle cx="50" cy="80" r="3" class="node" />
+          <circle cx="80" cy="50" r="3" class="node" />
+        </svg>
+        <div class="core-pulse"></div>
+      </div>
+      <p class="loader-text">Analizando datos...</p>
+    </div>
   </div>
 
   <header class="header">
     <nav class="navbar grid--container flex--container">
-      <a class="navbar__logo flex--container" href="#"><i class="bx bxs-registered"></i>Clio's</a>
       <div id="nav" class="navbar__menu">
         <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
         <ul class="navbar__list flex--container">
@@ -60,7 +72,7 @@
             <a class="navbar__link" href="#skills">Habilidades</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#projects">Portafolio</a>
+            <a class="navbar__link" href="#projects">Portafolio de Proyectos</a>
           </li>
           <li class="navbar__item">
             <a class="navbar__link" href="#contact">Contacto</a>
@@ -86,256 +98,474 @@
 
   <main>
     <section id="home" class="home">
-      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
-      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
-      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
-      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
-      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
-      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
-      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
-      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
-      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
-      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
-      <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
       <div class="home__container grid--container">
+
         <div class="home__image">
-          <img src="/assets/img/picture1.png" alt="profile photo" title="Clio Salgado" />
+          <div class="data-terminal">
+            <div class="terminal__header">
+              <div class="terminal__dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="terminal__title">clio_analytics_v1.0.py</span>
+            </div>
+
+            <div class="terminal__window">
+              <div class="terminal__code" id="terminalCode">
+                </div>
+  
+              <div class="network-viz">
+                <div class="node node-1"></div>
+                <div class="node node-2"></div>
+                <div class="node node-3"></div>
+                <div class="node node-4"></div>
+                <svg class="network-svg">
+                  <line x1="20%" y1="30%" x2="50%" y2="70%" />
+                  <line x1="50%" y1="70%" x2="80%" y2="40%" />
+                  <line x1="80%" y1="40%" x2="20%" y2="30%" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
+
         <ul class="home__social flex--container">
           <li class="home__social-item">
-            <a class="home__social-link" href="https://www.linkedin.com/in/clio-salgado-845a93319/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a class="home__social-link" href="https://www.linkedin.com/in/clio-salgado-845a93319/" target="_blank" title="Contáctame en LinkedIn"><i class="bx bxl-linkedin"></i></a>
           </li>
           <li class="home__social-item">
-            <a class="home__social-link" href="https://wa.me/+523323429201?text=Tu%20Mensaje%20De%20Texto" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            <a class="home__social-link" href="https://wa.me/+523323429201" target="_blank" title="Escríbeme en WhatsApp"><i class="bx bxl-whatsapp"></i></a>
           </li>
           <li class="home__social-item">
-            <a class="home__social-link" href="https://github.com/Clic-stack" target="_blank"><i class="bx bxl-github"></i></a>
+            <a class="home__social-link" href="https://github.com/Clic-stack" target="_blank" title="Sígueme y colaborá con alguno de mis  proyectos en GitHub"><i class="bx bxl-github"></i></a>
           </li>
           <li class="home__social-item">
-            <a class="home__social-link" href="mailto:clioanahi@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+            <a class="home__social-link" href="mailto:clioanahi@gmail.com" target="_blank" title="Envíame un correo electrónico"><i class="bx bx-envelope"></i></a>
           </li>
         </ul>
+
         <div class="home__info">
-          <h1 class="home__title">¡Hola! Soy Clio</h1>
+          <h1 class="home__title">CLIO SALGADO</h1>
+          <h2 class="home__subtitle">Desarrolladora Full Stack | Estudiante en Ciencias de Datos para Negocios</h2>
+          <div class="badge-container">
+            <span class="badge--student">Licenciatura en Curso</span>
+          </div>
           <p class="home__description">
-            Soy estudiante de Ciencias de Datos para Negocios (Big Data), con experiencia práctica y especialización en Desarrollo Web Full-Stack y más de siete años de trayectoria en roles administrativos, operativos y de gestión de calidad. Actualmente me encuentro transicionando al sector tecnológico, combinando mis habilidades analíticas con una pasión por la creación de soluciones digitales.
+            "<b>Desarrolladora Full Stack</b> con enfoque analítico a <b>Ciencias de Datos para Negocios</b>. Respaldada por <b>7 años de experiencia laboral previa manejando y liderando equipos</b> en operaciones y aseguramiento de calidad, pasando los últimos <b>18 meses en un cambio estratégico de carrera y especialización técnica intensiva</b>."
           </p>
-        </div>
-        <div class="home__buttons">
-          <a class="btn btn--primary" href="/assets/img/Currículo_Clio-Salgado.pdf" title="Descargar mi CV" download="Currículo_Clio-Salgado" rel="noreferrer nofollow">
-            Descargar CV
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about section">
-      <h2 class="section__title">Acerca de Mí</h2>
-
-      <div class="about__container grid--container">
-        <p class="about__description">
-          Hola, mi nombre es Clio. Tengo 28 años y soy originaria del Estado de México. He tenido la oportunidad de vivir en tres estados distintos de la República Mexicana, y desde hace aproximadamente seis años resido en la ciudad de Guadalajara, Jalisco. <br>
-          <br>Cuento con una sólida trayectoria en roles administrativos, operativos y de gestión de calidad. Actualmente me encuentro en proceso de transición al sector tecnológico, cursando una Licenciatura en Ciencias de Datos para Negocios (Big Data), junto con una especialización en Desarrollo Web Full-Stack y Ciencias de la Computación. <br>
-          <br>Aunque aún no he concluido mis estudios, ya he desarrollado y desplegado varios proyectos y aplicaciones web. Sigo ampliando mis conocimientos y fortaleciendo mi experiencia práctica en Data Science y Desarrollo Web Full-Stack. <br>
-          <br>En esta etapa de mi vida, mi principal objetivo es aplicar mis habilidades, fortalezas y conocimientos técnicos en proyectos reales relacionados con Tecnología, Ciencia de Datos o Desarrollo Web.
-        </p>
-
-        <div class="about__cards flex--container">
-          <!--Card 1 -->
-          <div class="about__card">
-            <img class="about__card--img" src="/assets/img/me3.jpg" alt="Clío en TalentLand"
-              title="Fijando y alcanzando objetivos" />
-          </div>
-          <!--Card 2 -->
-          <div class="about__card">
-            <img class="about__card--img" src="/assets/img/me2.jpg" alt="Clío en stand de Google"
-              title="Preparación continua" />
-          </div>
-          <!--Card 3 -->
-          <div class="about__card">
-            <img class="about__card--img" src="/assets/img/me.jpg" alt="Clío en alguna parte"
-              title="Disfrutando logros" />
+          <div class="home__buttons">
+            <a class="btn btn--primary" href="/assets/img/Currículo_Profesional_Clio.pdf" download="Currículo_Clio-Salgado">
+              Descargar CV
+            </a>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="about" class="about-section">
+      <div class="container-about">
+    
+        <div class="about-text-content">
+          <h2 class="section-title">Acerca de Mí</h2>
+          <p class="intro-text">¡Hola! Soy <strong>Clio</strong>. Una apasionada de la tecnología viviendo en     Guadalajara.</p>
+      
+          <p class="description">
+            Durante 7 años lideré, gestioné y supervisé equipos en roles operativos y de gestión de calidad,    desarrollando una visión aguda para la optimización de procesos. Hoy, transformo esa experiencia    en mi mayor ventaja dentro de la <strong>Ciencia de Datos</strong>.
+          </p>
+          <p class="description">
+            Mi perfil es <strong>híbrido</strong>: entiendo los desafíos reales de las organizaciones y poseo     las herramientas técnicas (<strong>Full Stack, Analytics y Data Science</strong>) para    resolverlos. Mi objetivo es convertir la complejidad en claridad estratégica.
+          </p>
+
+          <div class="mini-timeline">
+            <div class="timeline-item">
+              <span class="year">2017 - 2021</span>
+              <span class="milestone">Gestión, Administración, Operaciones, Calidad y Liderazgo</span>
+            </div>
+            <div class="connector"></div>
+            <div class="timeline-item">
+              <span class="year">2022</span>
+              <span class="milestone">Operaciones</span>
+            </div>
+            <div class="connector"></div>
+            <div class="timeline-item active">
+              <span class="year">2024</span>
+              <span class="milestone">Data Science <br> & <br>Full-Stack</span>
+            </div>
+          </div>
+
+          <div class="badges-container">
+            <span class="badge-item">📍 Guadalajara, MX</span>
+            <span class="badge-item">💻 Full-Stack Dev (Especialización)</span>
+            <span class="badge-item">🎓 Lic. Ciencia de Datos para Negocios (En curso)</span>
+          </div>
+      
+          <a href="#contact" class="btn-cta">¡Hablemos de datos! </a>
+        </div>
+
+        <div class="about-visual-content">
+          <div class="image-wrapper">
+            <img src="/assets/img/me2.jpg" alt="Clio en evento de tecnología" class="main-photo">
+            <div class="floating-tag">Data & Code</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section id="skills" class="skills section">
       <h2 class="section__title">Habilidades</h2>
 
       <div class="skills__container grid--container">
         <p class="skills__description flex--container">
-          A medida que el mundo se vuelve más competitivo, desarrollamos habilidades que nos preparan para aprovechar mejores oportunidades.
+          A medida que el mundo se vuelve más competitivo, desarrollamos las habilidades necesarias para aprovechar las mejores oportunidades.
         </p>
 
         <div class="skills__wrapper flex--container">
           <div class="skills__cards flex--container">
-            <!--Card 1 -->
             <details class="skills__cards-container" name="moreInfo" open>
               <summary class="skills__cards-title flex--container">
                 <i class="bx bxl-html5 flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">HTML</h3>
-
+                <h3 class="skills__card-title">HTML5</h3>
                 <p class="skills__card-description">
-                  El Lenguaje de Marcado de Hipertexto (HTML) es un lenguaje utilizado para crear y estructurar páginas web. Es el lenguaje por excelencia para documentos diseñados con la intención de ser mostrados en la web, gracias a su semántica, que permite definir elementos mediante etiquetas. Estas etiquetas indican cómo debe presentarse el contenido, y HTML suele complementarse muy bien con CSS y JavaScript para lograr una experiencia visual y funcional más completa.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title"><b>Habilidades Desarrolladas:</b></li>
-                    <li class="skills__card-list--item">Estructuración de contenido en una página web empleando etiquetas que definen elementos como texto, imágenes, videos, enlaces, tablas, listas, contenido embebido y formularios.</li>
-                    <li class="skills__card-list--item">Conocimiento e importancia del uso de metadatos en el desarrollo de un sitio web para el posicionamiento SEO (Search Engine Optimization).</li>
-                  </ul>
+                  <b>"La base estructural de cualquier sitio web; organiza el contenido para garantizar una comprensión fluida tanto para los usuarios como para los buscadores."</b>
                 </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Estructura Semántica para Accesibilidad (A11y) y SEO.</li>
+                  <li class="skills__card-list--item">Validación de datos de formularios en el lado del cliente.</li>
+                  <li class="skills__card-list--item">Optimización de metadatos para motores de búsqueda.</li>
+                </ul>
               </div>
             </details>
-            <!--Card 2 -->
+
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
                 <i class="bx bxl-css3 flex--container"></i>
+                <i class="bx bxl-sass flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">CSS3</h3>
-
+                <h3 class="skills__card-title">CSS3 / Sass</h3>
                 <p class="skills__card-description">
-                  Las hojas de estilo en cascada (CSS) son un lenguaje que permite diseñar y crear páginas web atractivas para el usuario. Se utiliza para describir la presentación de documentos escritos en HTML o XML. Por ende, cabe recalcar que CSS es una de las tecnologías fundamentales de la World Wide Web, junto con HTML y JavaScript.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title"><b>Habilidades Desarrolladas:</b></li>
-                    <li class="skills__card-list--item">Uso y aplicación de las distintas propiedades de CSS para estilar colores, tipografía, enlaces, listas, contenido desbordado, imágenes, posicionamiento y apilamiento.
-                    </li>
-                    <li class="skills__card-list--item">Conocimientos en modelo de caja, visibilidad, unidades de medida, Grid, Flexbox, variables CSS y media queries.
-                    </li>
-                  </ul>
+                  <b>"CSS3 es la capa estética que da vida al diseño, mientras que Sass proporciona un control detallado para crear experiencias visuales únicas y adaptables."</b>
                 </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Diseño Responsivo (Mobile First).</li>
+                  <li class="skills__card-list--item">Arquitectura modular y escalable con Sass.</li>
+                  <li class="skills__card-list--item">Gestión de Temas (Modo Claro/Oscuro).</li>
+                </ul>
               </div>
             </details>
-            <!--Card 3 -->
+
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
                 <i class="bx bxl-javascript flex--container"></i>
+                <i class="bx bxl-typescript flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">Javascript Backend</h3>
-
+                <h3 class="skills__card-title">JavaScript (ES6+) & TypeScript</h3>
                 <p class="skills__card-description">
-                  JavaScript es un lenguaje de programación multiplataforma orientado a objetos que se utiliza para hacer que las páginas web sean interactivas. Es un lenguaje basado en prototipos, con tipado dinámico, y soporta estilos de programación basados en eventos, funcionales e imperativos. Es ampliamente utilizado en el desarrollo web, aplicaciones del lado del servidor y desarrollo de aplicaciones móviles.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title"><b>Habilidades Desarrolladas:</b></li>
-                    <li class="skills__card-list--item">Conocimientos y aplicación de la terminal, variables, tipos de datos (primitivos y estructurados), funciones, métodos en tipos primitivos (números y cadenas), métodos en arreglos, métodos en objetos, operadores básicos y de comparación, coerción de tipos, bucles, condicionales y operadores lógicos.</li>
-                  </ul>
+                  <b>"JavaScript es el cerebro detrás de la interactividad, mientras que TypeScript añade una capa de seguridad, evitando errores antes de que ocurran."</b>
                 </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Manipulación del DOM y lógica moderna.</li>
+                  <li class="skills__card-list--item">Consumo de APIs RESTful.</li>
+                  <li class="skills__card-list--item">Desarrollo de componentes dinámicos.</li>
+                </ul>
               </div>
             </details>
-            <!--Card 4 -->
-            <details class="skills__cards-container" name="moreInfo">
-              <summary class="skills__cards-title flex--container">
-                <i class="bx bxl-javascript flex--container"></i>
-              </summary>
-              <div class="skills__card-container">
-                <h3 class="skills__card-title">Javascript Frontend</h3>
 
-                <p class="skills__card-description">
-                  JavaScript es un lenguaje de programación multiplataforma orientado a objetos, utilizado para dar vida, interactividad y dinamismo a los sitios y páginas web.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title"><b>Habilidades Desarrolladas:</b></li>
-                    <li class="skills__card-list--item">Conocimiento y aplicación de transiciones, animaciones, funciones avanzadas (constructoras, de orden superior, de fábrica, recursivas), manipulación del DOM y callbacks.</li>
-                  </ul>
-                </p>
-              </div>
-            </details>
-            <!--Card 5 -->
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
                 <i class="bx bxl-react flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">React</h3>
-
+                <h3 class="skills__card-title">React.js</h3>
                 <p class="skills__card-description">
-                  React permite construir interfaces modulares y escalables mediante componentes reutilizables, gestión eficiente del estado y renderizado optimizado con DOM virtual. Su enfoque declarativo y su ecosistema robusto lo convierten en una herramienta clave para el desarrollo de aplicaciones web modernas, especialmente en entornos SPA.
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title">
-                      <b>Habilidades Desarrolladas:</b>
-                    </li>
-                    <li class="skills__card-list--item">
-                      Aplicación de buenas prácticas en React mediante el uso de JSX, estilos modulares y externos, componentes reutilizables, props desestructuradas y gestión eficiente del estado con . Implementación de lógica condicional, estados computados e interacción fluida con el DOM virtual. Dominio de principios de inmutabilidad, operadores modernos como spread y encadenamiento opcional, y uso de métodos funcionales como  y  para renderizado dinámico.
-                    </li>
-                  </ul>
+                  <b>"Herramienta utilizada para construir interfaces modernas, permitiendo crear componentes reutilizables que agilizan y organizan el desarrollo."</b>
                 </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Gestión de estados complejos.</li>
+                  <li class="skills__card-list--item">Creación de componentes modulares y reutilizables.</li>
+                  <li class="skills__card-list--item">Integración eficiente de APIs RESTful.</li>
+                </ul>
               </div>
             </details>
-            <!--Card 6 -->
+
             <details class="skills__cards-container" name="moreInfo">
               <summary class="skills__cards-title flex--container">
-                <i class="bx bxl-react flex--container"></i>
+                <i class="bx bxl-tailwind-css flex--container"></i>
+                <i class="bx bxl-bootstrap flex--container"></i>
               </summary>
               <div class="skills__card-container">
-                <h3 class="skills__card-title">React</h3>
-                  <ul class="skills__card-list">
-                    <li class="skills__card-list--title">
-                      <b>Habilidades Desarrolladas:</b>
-                    </li>
-                    <li class="skills__card-list--item">
-                      Conocimiento y aplicación de formularios con entradas controladas y no controladas; el hook useEffect; obtención de datos (data fetching); escuchadores de eventos (event listeners); módulos ES (ES Modules); llamadas a API; manejo del estado de carga y gestión de errores; hooks como useMemo y useCallback; metodología BEM; y estilos con Sass.
-                    </li>
-                    <li class="skills__card-list--item">
-                      Conocimiento y aplicación del hook useRef, creación de hooks personalizados, componentes funcionales, uso de la prop children, implementación de modales y gestión de errores.
-                    </li>
-                    <li class="skills__card-list--item">
-                      Conocimiento y aplicación del hook useReducer, Context API con Provider y Consumer, el hook useContext, React Router, protección de rutas mediante autenticación, gestión de estado global con Zustand y uso de Local Storage.
-                    </li>
-                  </ul>
+                <h3 class="skills__card-title">Tailwind CSS & Bootstrap</h3>
+                <p class="skills__card-description">
+                  <b>"Bibliotecas de diseño utilizadas para el prototipado ágil y la entrega rápida cuando los proyectos requieren una estandarización inmediata."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Implementación rápida de diseño responsivo.</li>
+                  <li class="skills__card-list--item">Uso de componentes predefinidos.</li>
+                  <li class="skills__card-list--item">Adaptación de estilos base.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-nodejs flex--container"></i>
+                <i class="bx bx-server flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Node.js & Express</h3>
+                <p class="skills__card-description">
+                  <b>"Construyen el motor de la aplicación, gestionando eficientemente la comunicación entre el usuario y la base de datos."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Desarrollo de APIs robustas y escalables.</li>
+                  <li class="skills__card-list--item">Gestión de middleware para lógica de negocio y seguridad.</li>
+                  <li class="skills__card-list--item">Integración con bases de datos SQL y NoSQL.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-python flex--container"></i>
+                <i class="bx bx-bar-chart-alt-2 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Python (Pandas)</h3>
+                <p class="skills__card-description">
+                  <b>"Una herramienta poderosa para la Ciencia de Datos. Transformo datos crudos en información valiosa para la toma de decisiones informadas."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Limpieza, transformación y normalización de conjuntos de datos.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxs-data flex--container"></i>
+                <i class="bx bx-network-chart flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">SQL Avanzado & Sequelize</h3>
+                <p class="skills__card-description">
+                  <b>"Diseño y consulta de bases de datos relacionales, empleando Sequelize para conectar el código con los datos de manera elegante y segura."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Diseño y normalización de bases de datos relacionales.</li>
+                  <li class="skills__card-list--item">Optimización de consultas complejas (Joins, Indexación).</li>
+                  <li class="skills__card-list--item">Mapeo Objeto-Relacional (ORM) para seguridad y velocidad.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bx-shield-quarter flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Autenticación (JWT)</h3>
+                <p class="skills__card-description">
+                  <b>"Sistema de seguridad que identifica a los usuarios de forma privada, protegiendo su información en cada sesión."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Implementación de inicio de sesión seguro.</li>
+                  <li class="skills__card-list--item">Protección de rutas privadas.</li>
+                  <li class="skills__card-list--item">Gestión de tokens de acceso.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bx-check-shield flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Testing (Jest & Supertest)</h3>
+                <p class="skills__card-description">
+                  <b>"Garantizan que cada pieza de código funcione exactamente como se espera, evitando fallos en el producto final."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Pruebas unitarias para lógica de componentes y funciones.</li>
+                  <li class="skills__card-list--item">Pruebas de integración para endpoints de APIs.</li>
+                  <li class="skills__card-list--item">Garantía de Calidad (QA) y prevención de errores en producción.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-github flex--container"></i>
+                <i class="bx bx-terminal flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Git, GitHub & Terminal</h3>
+                <p class="skills__card-description">
+                  <b>"Herramientas esenciales para el control de versiones y la gestión eficiente del flujo de trabajo técnico."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Colaboración y gestión de repositorios.</li>
+                  <li class="skills__card-list--item">Automatización mediante línea de comandos.</li>
+                  <li class="skills__card-list--item">Despliegue Continuo (Netlify, Render, Vercel).</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bx-code-alt flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Otras herramientas (Postman, NetLogo, C++)</h3>
+                <p class="skills__card-description">
+                  <b>"Software especializado utilizado para probar APIs o realizar simulaciones complejas de comportamiento."</b>
+                </p>
+                <ul class="skills__card-list">
+                  <li class="skills__card-list--title"><b>Competencias Clave:</b></li>
+                  <li class="skills__card-list--item">Pruebas y documentación de APIs (Postman).</li>
+                  <li class="skills__card-list--item">Simulación de sistemas complejos (NetLogo).</li>
+                  <li class="skills__card-list--item">Programación de bajo nivel (C++).</li>
+                </ul>
               </div>
             </details>
           </div>
         </div>
+
         <div class="skills__tags flex--container">
           <h3 class="skills__tags-title">Habilidades Blandas</h3>
           <div class="skills__tags-container flex--container">
-            <div class="flip-card">
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Perseverancia. Presiona para leer descripción.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Perseverancia</span>
-                <span class="skills__tag-back">“Construyo con intención, aprendo con propósito y evoluciono con claridad. Cada proyecto refleja mi compromiso con la excelencia a través de iteraciones estratégicas, decisiones conscientes y mejora continua.”</span>
+                <div class="skills__tag">
+                  <span>Perseverancia</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Construyo con intención, aprendo con propósito y evoluciono con claridad. Enfoque en la excelencia a través de la mejora continua y decisiones conscientes.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Adaptabilidad. Presiona para leer descripción.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Adaptabilidad</span>
-                <span class="skills__tag-back">“Evoluciono con rapidez y precisión, integrando tecnologías y metodologías que responden al contexto y al usuario. Cada solución que desarrollo refleja flexibilidad técnica y visión estratégica.”</span>
+                <div class="skills__tag">
+                  <span>Adaptabilidad</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Evolucionando con rapidez y precisión. Integración ágil de nuevas metodologías y tecnologías según las necesidades del usuario y el negocio.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card" 
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Trabajo en equipo. Presiona para leer descripción.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Trabajo en Equipo</span>
-                <span class="skills__tag-back">“Integro habilidades, lenguajes y estilos para construir soluciones técnicas que combinan modularidad y diversidad. Colaborar significa lograr juntos lo que ningún perfil lograría por separado.”</span>
+                <div class="skills__tag">
+                  <span>Trabajo en Equipo</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Integrando habilidades, lenguajes y estilos. Colaborar significa lograr juntos lo que ningún perfil lograría por separado.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Pensamiento Analítico y Creativo. Presiona para leer descripción.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Pensamiento Analítico, Lógico y Creativo</span>
-                <span class="skills__tag-back">“Diseño soluciones que resuelven con precisión y comunican con intención. Cada componente refleja excelencia funcional, lógica estructural y sensibilidad estética.”</span>
+                <div class="skills__tag">
+                  <span>Pensamiento Analítico y Creativo</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Diseño soluciones que resuelven con precisión y comunican con intención. Cada componente refleja excelencia funcional y lógica estructural.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Aprendizaje Continuo. Presiona para leer descripción.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Aprendizaje Continuo y Autodidacta</span>
-                <span class="skills__tag-back">“Aprendo con profundidad y rapidez, integrando tecnologías y metodologías que impulsan cada decisión técnica. El aprendizaje es mi práctica constante para evolucionar, iterar y posicionarme internacionalmente.”</span>
+                <div class="skills__tag">
+                  <span>Aprendizaje Continuo</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Aprendizaje profundo y rápido. Capacidad autodidacta para dominar herramientas emergentes y posicionarme en el mercado global.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Resolución de Problemas. Presiona para leer descripción.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Resolución de Problemas</span>
-                <span class="skills__tag-back">“Transformo errores en oportunidades para fortalecer la arquitectura, mejorar la experiencia del usuario y refinar la narrativa técnica. Mi enfoque combina lógica, sensibilidad y creatividad aplicada.”</span>
+                <div class="skills__tag">
+                  <span>Resolución de Problemas</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Transformando fallos técnicos en soluciones arquitectónicas robustas mediante el pensamiento lógico y creativo.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Orientación a Resultados. Presiona para leer descripción.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Mentalidad orientada a resultados</span>
-                <span class="skills__tag-back">“Tomo decisiones técnicas y narrativas con intención clara y enfoque estratégico. Cada solución que desarrollo busca impacto real, valor tangible y excelencia funcional y estética.”</span>
+                <div class="skills__tag">
+                  <span>Orientación a Resultados</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Toma de decisiones técnicas y narrativas con intención clara para generar valor tangible y un impacto real.”</p>
+                </div>
               </div>
             </div>
-            <div class="flip-card">
+
+            <div class="flip-card"
+                  role="button" 
+                  tabindex="0" 
+                  aria-expanded="false" 
+                  aria-label="Habilidad: Comunicación Asertiva. Presiona para leer descripción.">
               <div class="flip-card-inner">
-                <span class="skills__tag">Comunicación Asertiva y Empática</span>
-                <span class="skills__tag-back">“Colaboro con claridad y sensibilidad en cada etapa del desarrollo. Mis interfaces respetan la lógica técnica y la experiencia humana, integrando equipos y visiones con intención.”</span>
+                <div class="skills__tag">
+                  <span>Comunicación Asertiva</span>
+                </div>
+                <div class="skills__tag-back">
+                  <p>“Colaborando con claridad y sensibilidad en cada etapa del desarrollo, respetando la lógica técnica y la experiencia humana.”</p>
+                </div>
               </div>
             </div>
           </div>
@@ -355,7 +585,7 @@
 
       <div class="grid hidden" id="projectGrid"></div>
 
-      <div id="modal" class="modal hidden">
+      <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-content theme-adaptative">
           <button class="close" aria-label="Cerrar modal">X</button>
           <header class="modal-header">
@@ -388,12 +618,12 @@
 
     <section class="container">
         <div id="carousel">
-          <figure><img src="/assets/img/portfolio.png" alt="Portafolio web"></figure>
-          <figure><img src="/assets/img/project_1.png" alt="Aplicación Galleta de la Fortuna"></figure>
-          <figure><img src="/assets/img/project_2.png" alt="Aplicación del Clima"></figure>
-          <figure><img src="/assets/img/project_3.png" alt="Aplicación de Rick y Morty"></figure>
-          <figure><img src="/assets/img/project_4.png" alt="CRUD de Usuarios"></figure>
-          <figure><img src="/assets/img/pokedex_home.png" alt="Pokédex"></figure>
+          <figure tabindex="0" data-index="0"><img src="/assets/img/portfolio.png" alt="Portafolio web"></figure>
+          <figure tabindex="0" data-index="4"><img src="/assets/img/project_4.png" alt="CRUD de Usuarios"></figure>
+          <figure tabindex="0" data-index="5"><img src="/assets/img/project_5.png" alt="Pokédex"></figure>
+          <figure tabindex="0" data-index="6"><img src="/assets/img/gallery_movies.png" alt="GalleryMoviesTesting"></figure>
+          <figure tabindex="0" data-index="7"><img src="/assets/img/auth-mailer.png" alt="Auth-Mailer"></figure>
+          <figure tabindex="0" data-index="8"><img src="/assets/img/booking.png" alt="BookingApp"></figure>
         </div>
         <div id="navigation">
           <button data-increment="-1">⬅</button>
@@ -511,59 +741,167 @@
     <p class="footer__copy"></p>
   </footer>
 
-  <script>
+  <script type="module">
+    import { projects } from '../js/helpers/projects.js';
+    import { openModal } from '../js/helpers/modal.js';
+
     const carousel = document.getElementById('carousel');
     const buttons = document.querySelectorAll('#navigation button');
     const panelCount = carousel.children.length;
     let theta = 0;
-    let autoRotate = setInterval(() => {
-      theta += (360 / panelCount);
-      carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
-    }, 5000);
+    let autoRotate;
 
-    carousel.addEventListener('mouseenter', () => clearInterval(autoRotate));
-    carousel.addEventListener('mouseleave', () => {
-        autoRotate = setInterval(() => {
+    // --- FUNCIÓN DE ROTACIÓN REUTILIZABLE ---
+    const rotateCarousel = () => {
+      if (!carousel.parentElement.classList.contains('hidden')) {
         theta += (360 / panelCount);
         carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
-      }, 5000);
+      }
+    };
+
+    // Modificación en las funciones de control
+    const startAutoRotate = () => {
+      // Limpieza preventiva: si ya hay un intervalo, lo borramos antes de crear otro
+      if (autoRotate) clearInterval(autoRotate); 
+      autoRotate = setInterval(rotateCarousel, 3000);
+    };
+
+    const stopAutoRotate = () => {
+      clearInterval(autoRotate);
+      autoRotate = null; // Limpiamos la referencia
+    };
+
+    startAutoRotate();
+
+    // --- LÓGICA DE NAVEGACIÓN INTELIGENTE POR TECLADO ---
+    const figures = carousel.querySelectorAll('figure');
+
+    figures.forEach((figure, index) => {
+      // 1. Acción de abrir el proyecto
+      const handleOpenProject = () => {
+        const projectIndex = figure.getAttribute('data-index');
+        const project = projects[projectIndex];
+        if (project) openModal(project);
+      };
+
+      figure.addEventListener('click', handleOpenProject);
+
+      figure.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleOpenProject();
+        }
+      });
+
+      // 2. LOGICA CLAVE: Rotar el carrusel al recibir el foco
+      figure.addEventListener('focus', () => {
+        // Detiene la rotación automática para que no "luche" con el usuario
+        stopAutoRotate();
+
+        // Calculo del ángulo exacto para este panel
+        // Intención de que el panel seleccionado esté en 0 grados (frente al usuario)
+        // La fórmula es: -(ángulo de cada panel * índice)
+        const anglePerPanel = 360 / panelCount;
+        theta = -(anglePerPanel * index);
+
+        // Aplica la rotación
+        carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
+      });
+
+      // 3. Reanudar rotación automática cuando el usuario sale del carrusel
+      figure.addEventListener('blur', (e) => {
+        // Solo se reanuda si el nuevo elemento enfocado NO es otra figura del carrusel
+        if (!e.relatedTarget || e.relatedTarget.tagName !== 'FIGURE') {
+            startAutoRotate();
+        }
+      });
     });
 
+    // --- EVENTOS DE MOUSE PARA EL CARRUSEL ---
+    carousel.addEventListener('mouseenter', stopAutoRotate);
+    carousel.addEventListener('mouseleave', (e) => {
+      // Verifica que el foco no esté en una figura antes de reanudar
+      // Esto evita que el mouse reactive la rotación si el usuario está usando el teclado
+      if (document.activeElement.tagName !== 'FIGURE') {
+        startAutoRotate();
+      }
+    });
+
+    // --- EVENTOS DE BOTONES ---
     buttons.forEach(button => {
       button.addEventListener('click', event => {
-        const increment = parseInt(event.target.getAttribute('data-increment'));
-        theta += (360 / panelCount) * increment;
-        carousel.style.transform = `translateZ(-288px) rotateY(${theta}deg)`;
+        // Al hacer click manual, es buena práctica resetear el intervalo
+        stopAutoRotate(); 
+        
+        const increment = parseInt(event.currentTarget.getAttribute('data-increment'));
+        theta -= (360 / panelCount) * increment;
+        carousel.style.transform = `translateZ(-576px) rotateY(${theta}deg)`;
+        
+        // Reanuda solo si el mouse no está encima después del click
+        // o si no hay un elemento enfocado
+        startAutoRotate(); 
+      });
+    });
+
+    // --- VIGILANTE DEL MODAL (MutationObserver) ---
+    const modalTarget = document.querySelector('.modal'); 
+
+    if (modalTarget) {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.attributeName === 'class' || mutation.attributeName === 'style') {
+            const isHidden = modalTarget.classList.contains('hidden') || modalTargetstyledisplay ==='none';
+                
+            if (isHidden) {
+              // --- LA CLAVE ESTÁ AQUÍ ---
+              // Si el elemento enfocado es una figura, le quitamos el foco
+              if (document.activeElement.tagName === 'FIGURE') {
+                  document.activeElement.blur(); 
+              }
+
+              const isMouseOver = carousel.matches(':hover');
+              // Ahora esta validación pasará porque acabo de hacer .blur()
+              if (!isMouseOver) {
+                  startAutoRotate();
+              }
+            }
+          }
+        });
+      });
+      observer.observe(modalTarget, { attributes: true });
+    }
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const languageToggle = document.getElementById("language-toggle");
+    
+      // Sincronizar el toggle visual
+      const savedLanguage = localStorage.getItem("language");
+      languageToggle.checked = (savedLanguage === "es");
+
+      languageToggle.addEventListener("change", function () {
+        const newLang = this.checked ? "es" : "en";
+        localStorage.setItem("language", newLang);
+
+        // --- EL TRUCO: Guardar el ID de la sección actual ---
+        // Busca qué sección está en la URL (ej. #about-me)
+        if (window.location.hash) {
+          sessionStorage.setItem("redirectSection", window.location.hash);
+        }
+
+        // Redirigir a rutas originales
+        window.location.href = (newLang === "es") ? "/assets/lang/index.html" : "/index.html";
       });
     });
   </script>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const languageToggle = document.getElementById("language-toggle");
-
-    // Verifica el idioma guardado en localStorage
-    const savedLanguage = localStorage.getItem("language");
-    if (savedLanguage === "es") {
-      languageToggle.checked = true;
-    }
-
-    languageToggle.addEventListener("change", function () {
-      if (this.checked) {
-        // Español
-        localStorage.setItem("language", "es");
-        window.location.href = "/assets/lang/index.html"; // cambia por tu ruta en español
-      } else {
-        // Inglés
-        localStorage.setItem("language", "en");
-        window.location.href = "/index.html"; // cambia por tu ruta en inglés
-      }
-    });
-  });
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
-</body>
+<div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true">
+  <button class="lightbox-close" id="closeLightboxBtn" aria-label="Cerrar imagen expandida">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
 
+</body>
 </html>
