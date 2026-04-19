@@ -108,20 +108,27 @@ git clone [https://github.com/Clic-stack/Portafolio.git](https://github.com/Clic
 
 ## 🗺️ Future Roadmap
 **Phase 1: Advanced Analytics (Data Science Focus)** 📊
+
 [ ] **Data Visualization Dashboard:** Implement charts using D3.js or Chart.js to show real-time portfolio traffic and project engagement metrics.
+
 [ ] **Predictive Recommendation Engine:** Develop a small Python/Flask microservice to suggest projects to recruiters based on their interests.
 
 **Phase 2: Technical Excellence & Scalability** 🛠️
+
 [ ] **TypeScript Migration:** Refactor all core logic and helpers to TypeScript for better type safety and maintainability.
+
 [ ] **Automated Testing:** Implementation of unit tests with Jest for critical components like the search engine and bilingual toggle.
 
 **Phase 3: Performance & DevOps** 🚀
+
 [ ] **CI/CD Pipeline:** Automate deployment and testing flows using GitHub Actions.
+
 [ ] **Performance Optimization:** Achieve a consistent 100/100 score on Google Lighthouse by optimizing assets and implementing lazy loading for all project modals.
 
 ## 👩‍💻 Let's Connect
 **Clio Salgado** - Data Scientist & Full-Stack Developer
-*Transforming technical knowledge into digital solutions with purpose.*
+
+*"Transforming technical knowledge into digital solutions with purpose."*
 
 LinkedIn | Email | Portfolio
 
@@ -234,20 +241,24 @@ git clone https://github.com/Clic-stack/Portafolio.git
 **Fase 1: Analítica Avanzada (Enfoque en Ciencia de Datos)** 📊
 
 [ ] **Dashboard de Visualización de Datos:** Implementar gráficas interactivas con D3.js o Chart.js para mostrar métricas de tráfico en tiempo real y el nivel de interacción con los proyectos.
+
 [ ] **Motor de Recomendación Predictivo:** Desarrollar un microservicio en Python/Flask que sugiera proyectos específicos a los reclutadores basándose en sus intereses o perfil de búsqueda.
 
 **Fase 2: Excelencia Técnica y Escalabilidad** 🛠️
 
 [ ] **Migración a TypeScript:** Refactorizar toda la lógica central y los helpers a TypeScript para garantizar una mayor seguridad en los tipos de datos y facilitar el mantenimiento a largo plazo.
+
 [ ] **Pruebas Automatizadas:** Implementación de pruebas unitarias con Jest para componentes críticos, como el motor de búsqueda y el selector de idioma.
 
 **Fase 3: Rendimiento y DevOps** 🚀
 
 [ ] **Pipeline de CI/CD:** Automatizar los flujos de despliegue y pruebas utilizando GitHub Actions.
+
 [ ] **Optimización de Rendimiento:** Alcanzar una puntuación constante de 100/100 en Google Lighthouse mediante la optimización de recursos (assets) e implementación de lazy loading en todos los modales de proyectos.
 
 ## 👩‍💻 Contacto
 **Clio Salgado** - Científica de Datos & Desarrolladora Full-Stack
-*Transformando el conocimiento técnico en soluciones digitales con propósito.*
+
+*"Transformando el conocimiento técnico en soluciones digitales con propósito."*
 
 LinkedIn | Email | Portfolio
