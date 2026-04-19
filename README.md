@@ -1,55 +1,152 @@
-## 🌐 Portafolio Web – Clio Salgado
-Este portafolio fue desarrollado en primera instancia como parte del proyecto de acreaditación del módulo de Fundamentos en HTML, CSS y Javascript, pero con el paso del tiempo, este proyecto se ha convertido en parte de mi transición profesional hacia el sector tecnológico, con el objetivo de presentar de forma clara, visual y estratégica mi perfil, habilidades, formación y proyectos. El sitio web está construido con HTML, CSS y JavaScript, integrando animaciones, interactividad, diseño responsivo y una narrativa visual que refleja mi evolución como desarrolladora. Se prioriza la experiencia del usuario con navegación fluida, diseño responsivo, componentes reutilizables y una estética cuidada.
+## 🌐 Strategic Portfolio: Full-Stack & Data Showcase
+**Custom-Built with Vanilla Web Technologies**
 
-## 🚀Demo en línea  
-**🔗[https://portfolio-clio-salgado.netlify.app]**
+**🇺🇸 English Version**
+## 📖 Story & Evolution
+***This project originated as a foundational landing page and has matured into a sophisticated personal brand ecosystem. Developed entirely with Vanilla HTML5, CSS3, and JavaScript, it showcases my professional Reskilling journey—merging 7 years of operational leadership with a deep technical focus on Data Science and Full-Stack Development.***
 
-## 🎯 Objetivo del proyecto
+## 🌐 Deployment
+**Front End with Netlify:** https://portfolio-clio-salgado.netlify.app
 
-Construir un portafolio web profesional, funcional y visualmente atractivo que permita:
+## 🚀 Key Technical Features
+* Pure CSS3 Mastery: 100% custom styling including a 3D rotating carousel, 3D flip cards for soft skills, and complex keyframe animations (Typing effect, bouncing buttons, and neural network simulations) without external UI libraries.
+* Intelligent UI/UX: Responsive architecture with Dark/Light mode persistence and a full bilingual toggle (EN/ES) managed via LocalStorage.
+* Dynamic Terminal Home: A custom-coded interactive terminal that simulates data processing and neural network initialization using asynchronous JavaScript.
+* Context-Aware CV: A logic-based download system that delivers the specific Resume (EN or ES) matching the user's current session language.
+* Advanced Project Engine: * Filtered search by category (Full-Stack vs. Data) with a custom search engine and real-time suggestions.
+* Interactive modals with expandable image galleries and smart pagination.
+* Automated Contact System: Integrated with EmailJS, featuring bidirectional automated flows: personalized confirmations for the user (in their language) and detailed lead alerts for me.
+* Engagement: Integrated JS Confetti triggers and dynamic interaction hooks.
 
-- Presentar mi perfil, formación, habilidades técnicas y blandas.
-- Mostrar mis proyectos desarrollados con distintas tecnologías.
-- Facilitar el contacto directo y la descarga de mi CV.
-- Integrar una narrativa visual que refleje mi estilo, evolución y enfoque estratégico.
+## 🛠️ Core Stack
+* HTML5: Semantic and accessible structure.
+* CSS3: Custom properties (variables), Flexbox/Grid, 3D Transforms, and advanced Animations.
+* JavaScript (ES6+): Modular architecture, DOM manipulation, and State persistence.
 
-Este proyecto refuerza prácticas clave como:
+## 🗂️ Project Structure
 
-- Composición modular y reutilizable.
-- Diseño responsivo para múltiples dispositivos.
-- Integración de animaciones suaves y navegación fluida.
-- Curación de habilidades blandas con frases de alto impacto.
-- Organización clara de proyectos por tecnologías y funcionalidades.
-- Manejo de errores, redes sociales activas y formulario de contacto.
+```bash
+📁 PROJECTS&PORTFOLIO_CLIO/
+├── 📁 assets/
+|    |___ 📁 css/
+│    |    └── style.css
+|    |___ 📁 html/
+|    |___ 📁 img/
+│    |    └── 02.join_posts-users-like.png
+│    |    └── auth-mailer-api_security.png
+│    |    └── auth-mailer-api_signup.png
+│    |    └── auth-mailer-api_user_created.png
+│    |    └── auth-mailer.png
+│    |    └── blog_db-1.png
+│    |    └── blog_db.png
+│    |    └── booking-app_erd-db.png
+│    |    └── booking.png
+│    |    └── Currículo_Clio-Salgado.pdf
+│    |    └── espana.png
+│    |    └── form_usercrud.png
+│    |    └── fortune_cookie.png
+│    |    └── fortune_cookie1.png
+│    |    └── fortune_cookie2.png
+│    |    └── gallery_movies_pipelines.png
+│    |    └── gallery_movies.png
+│    |    └── loading_weather.png
+│    |    └── location_card.png
+│    |    └── logo.svg
+│    |    └── me2.jpg
+│    |    └── pipelines_bookingapp.png
+│    |    └── poke.png
+│    |    └── pokecard.png
+│    |    └── pokedex.png
+│    |    └── portfolio.png
+│    |    └── Professional_Resume_Clio.pdf
+│    |    └── project_1.png
+│    |    └── project_2.png
+│    |    └── project_3.png
+│    |    └── project_4.png
+│    |    └── project_5.png
+│    |    └── projects.png
+│    |    └── reino-unido.png
+│    |    └── residents_card.png
+│    |    └── rickandmorty_loading.png
+│    |    └── skills.png
+│    |    └── testing_2.png
+│    |    └── usercrud_home.png
+│    |    └── usercrud_loading.png
+│    |    └── weather.png
+│    |    └── weather1.png
+|    |___ 📁 js/
+|    |    |___ 📁 components/
+│    |    |    └── confettiEffect.js
+│    |    |    └── selected_menu.js
+|    |    |___ 📁 helpers/
+│    |    |    └── date_updater.js
+│    |    |    └── language.js
+│    |    |    └── loader.js
+│    |    |    └── modal.js
+│    |    |    └── pagination.js
+│    |    |    └── projects.js
+│    |    |    └── reload_page.js
+│    |    |    └── send_form.js
+│    |    |    └── translations.js
+|    |    |___ main.js
+|    |___ 📁 lang/
+|    |    |___ index.html (version español)
+├── index.html (versión inglés)
+├── README.md
+```
 
-## ⚛️Tecnologías usadas⚡
+## 🛠️ Local Installation
 
-### Tecnologías principales
+1. Clone the repository
+```bash
+git clone [https://github.com/Clic-stack/Portafolio.git](https://github.com/Clic-stack/Portafolio.git)
+```
 
-| Herramienta / Lenguaje | Uso principal |
-|------------------------|---------------|
-| **HTML**               | Estructura semántica del sitio. |
-| **CSS**                | Estilos personalizados y responsivos. |
-| **JavaScript (ES6+)**  | Interactividad, validaciones y animaciones. |
-| **Google Fonts**       | Tipografía personalizada y estética. |
-| **Boxicons**           | Íconos semánticos y visuales. |
-| **EmailJS**            | Envío de mensajes desde el formulario de contacto. |
-| **JS Confetti**        | Animación visual para interacción final. |
-| **GitHub**             | Control de versiones y repositorio del proyecto. |
-| **Netlify**            | Hosting y despliegue del sitio web. |
+2. (Optional) Install the **`vscode-pdf`** extension in **Visual Studio Code** to preview resumes directly in the code.
 
-### Estructura lógica y narrativa
+3. Open the **`index.html`** file in your browser or use **`Live Server`** to view it locally.
 
-- **Secciones principales**: Inicio, Acerca de Mí, Habilidades, Portafolio, Contacto.
-- **Narrativa visual**: Frases estratégicas que sintetizan habilidades blandas.
-- **Organización de proyectos**: Filtros por categoría (Web / Data), búsqueda inteligente y visualización en modal.
-- **Diseño modular**: Cada sección es autónoma y fácilmente escalable.
-- **Responsive Design**: Adaptación fluida a dispositivos móviles y escritorio.
-- **Descarga de CV**: Acceso directo al documento actualizado.
-- **Formulario funcional**: Envío de mensajes con EmailJS y confirmación en modal.
-- **Modo oscuro y selector de idioma**: Accesibilidad y personalización.
-- **Animación de loader SVG y carrusel 3D**: Transiciones visuales y navegación interactiva.
+## 🗺️ Future Roadmap
+**Phase 1: Advanced Analytics (Data Science Focus)** 📊
+[ ] **Data Visualization Dashboard:** Implement charts using D3.js or Chart.js to show real-time portfolio traffic and project engagement metrics.
+[ ] **Predictive Recommendation Engine:** Develop a small Python/Flask microservice to suggest projects to recruiters based on their interests.
 
+**Phase 2: Technical Excellence & Scalability** 🛠️
+[ ] **TypeScript Migration:** Refactor all core logic and helpers to TypeScript for better type safety and maintainability.
+[ ] **Automated Testing:** Implementation of unit tests with Jest for critical components like the search engine and bilingual toggle.
+
+**Phase 3: Performance & DevOps** 🚀
+[ ] **CI/CD Pipeline:** Automate deployment and testing flows using GitHub Actions.
+[ ] **Performance Optimization:** Achieve a consistent 100/100 score on Google Lighthouse by optimizing assets and implementing lazy loading for all project modals.
+
+## 👩‍💻 Let's Connect
+**Clio Salgado** - Data Scientist & Full-Stack Developer
+*Transforming technical knowledge into digital solutions with purpose.*
+
+LinkedIn | Email | Portfolio
+
+**🇲🇽 Versión en Español**
+## 📖 Historia y Evolución
+***Este proyecto nació como una landing page básica y ha madurado hasta convertirse en un ecosistema sofisticado de marca personal. Desarrollado íntegramente con HTML5, CSS3 y JavaScript Vanilla, refleja mi proceso de Reskilling profesional: la fusión de 7 años de liderazgo operativo con un enfoque técnico en Ciencia de Datos y Desarrollo Full-Stack.***
+
+## 🌐 Despliegue
+**Front End con Netlify:** https://portfolio-clio-salgado.netlify.app
+
+## 🚀 Funcionalidades Técnicas Clave
+* Dominio de CSS3 Puro: Estilos 100% personalizados que incluyen un carrusel rotativo 3D, flip cards 3D para soft skills y animaciones complejas de keyframes (efecto typing, botones dinámicos y simulación de redes neuronales) sin librerías externas.
+* UI/UX Inteligente: Arquitectura responsiva con persistencia de modo Claro/Oscuro y selector bilingüe (EN/ES) gestionado a través de LocalStorage.
+* Home con Terminal Dinámica: Una terminal interactiva programada desde cero que simula el procesamiento de datos e inicialización de redes mediante JavaScript asíncrono.
+* CV Contextual: Sistema de descarga basado en lógica que entrega el Currículum específico (EN o ES) según el idioma seleccionado por el usuario.
+* Motor de Proyectos Avanzado: * Búsqueda filtrada por categoría (Full-Stack vs. Data) con buscador inteligente y sugerencias en tiempo real.
+* Modales interactivos con galerías expandibles y paginación dinámica.
+* Contacto Automatizado: Integración con EmailJS con flujos bidireccionales: confirmaciones automáticas para el usuario (en su idioma) y alertas detalladas de leads para mi gestión.
+* Engagement: Disparadores de JS Confetti y ganchos de interacción dinámica.
+
+## 🛠️ Tecnologías Base
+* HTML5: Estructura semántica, accesible y bilingüe.
+* CSS3: Propiedades personalizadas (variables), Flexbox/Grid, Transformaciones 3D y Animaciones avanzadas.
+* JavaScript (ES6+): Arquitectura modular, manipulación del DOM y persistencia de estado.
+  
 ## 🗂️Estructura del proyecto
 
 ```bash
@@ -59,35 +156,44 @@ Este proyecto refuerza prácticas clave como:
 │    |    └── style.css
 |    |___ 📁 html/
 |    |___ 📁 img/
+│    |    └── 02.join_posts-users-like.png
+│    |    └── auth-mailer-api_security.png
+│    |    └── auth-mailer-api_signup.png
+│    |    └── auth-mailer-api_user_created.png
+│    |    └── auth-mailer.png
+│    |    └── blog_db-1.png
+│    |    └── blog_db.png
+│    |    └── booking-app_erd-db.png
+│    |    └── booking.png
 │    |    └── Currículo_Clio-Salgado.pdf
-│    |    └── darkportfolio.png
 │    |    └── espana.png
 │    |    └── form_usercrud.png
 │    |    └── fortune_cookie.png
 │    |    └── fortune_cookie1.png
 │    |    └── fortune_cookie2.png
+│    |    └── gallery_movies_pipelines.png
+│    |    └── gallery_movies.png
 │    |    └── loading_weather.png
 │    |    └── location_card.png
 │    |    └── logo.svg
-│    |    └── me.jpg
 │    |    └── me2.jpg
-│    |    └── me3.jpg
-│    |    └── picture1.png
+│    |    └── pipelines_bookingapp.png
 │    |    └── poke.png
 │    |    └── pokecard.png
-│    |    └── pokedex_home.png
 │    |    └── pokedex.png
 │    |    └── portfolio.png
+│    |    └── Professional_Resume_Clio.pdf
 │    |    └── project_1.png
 │    |    └── project_2.png
 │    |    └── project_3.png
 │    |    └── project_4.png
+│    |    └── project_5.png
 │    |    └── projects.png
 │    |    └── reino-unido.png
 │    |    └── residents_card.png
-│    |    └── Resume_Clio-Salgado.pdf
 │    |    └── rickandmorty_loading.png
 │    |    └── skills.png
+│    |    └── testing_2.png
 │    |    └── usercrud_home.png
 │    |    └── usercrud_loading.png
 │    |    └── weather.png
@@ -95,7 +201,6 @@ Este proyecto refuerza prácticas clave como:
 |    |___ 📁 js/
 |    |    |___ 📁 components/
 │    |    |    └── confettiEffect.js
-│    |    |    └── parallax.js
 │    |    |    └── selected_menu.js
 |    |    |___ 📁 helpers/
 │    |    |    └── date_updater.js
@@ -111,25 +216,12 @@ Este proyecto refuerza prácticas clave como:
 |    |___ 📁 lang/
 |    |    |___ index.html (version español)
 ├── index.html (versión inglés)
+├── README.md
 ```
 
-## 🧠Funcionalidades principales
-
-- Loader SVG animado al iniciar la app.
-- Navbar responsiva con modo oscuro y selector de idioma.
-- Sección de presentación con imagen, redes sociales y botón de descarga de CV.
-- Sección “Acerca de Mí” con narrativa personal y galería de imágenes.
-- Sección “Habilidades” con tarjetas desplegables para tecnologías y habilidades blandas con efecto flip.
-- Sección “Proyectos” con filtros por categoría, búsqueda inteligente, carrusel visual y modales con detalles técnicos.
-- Sección “Contacto” con información personal, redes sociales y formulario funcional con EmailJS.
-- Footer con redes sociales y descripción final.
-- Animación de confetti al llegar a la sección de contacto.
-- Diseño responsivo y navegación fluida entre secciones.
-
-## 🛠️Instalación local
+## 🛠️ Instalación local
 
 1. Clona este repositorio:
-
 ```bash
 git clone https://github.com/Clic-stack/Portafolio.git
 ```
@@ -138,152 +230,24 @@ git clone https://github.com/Clic-stack/Portafolio.git
 
 3. Abre el archivo **`index.html`** en tu navegador o usa una extensión como **`Live Server`** para visualizarlo localmente.
 
-## 🎨Autor  
-Desarrollado por Clio Salgado como parte de su transición profesional hacia el sector tecnológico, combinando habilidades analíticas, visuales y narrativas para construir una presencia digital estratégica.
+## 🗺️ Road Map Futuro
+**Fase 1: Analítica Avanzada (Enfoque en Ciencia de Datos)** 📊
 
----
+[ ] **Dashboard de Visualización de Datos:** Implementar gráficas interactivas con D3.js o Chart.js para mostrar métricas de tráfico en tiempo real y el nivel de interacción con los proyectos.
+[ ] **Motor de Recomendación Predictivo:** Desarrollar un microservicio en Python/Flask que sugiera proyectos específicos a los reclutadores basándose en sus intereses o perfil de búsqueda.
 
-🔽 **English version below** 🔽
+**Fase 2: Excelencia Técnica y Escalabilidad** 🛠️
 
-## 🌐 Portfolio Website – Clio Salgado
-This portfolio was initially developed as part of the accreditation project for the HTML, CSS, and JavaScript Fundamentals module. Over time, it has evolved into a key piece of my professional transition into the tech sector, designed to clearly, visually, and strategically present my profile, skills, education, and projects. The site is built with HTML, CSS, and JavaScript, integrating animations, interactivity, responsive design, and a visual narrative that reflects my growth as a developer. User experience is prioritized through smooth navigation, reusable components, and a refined aesthetic.
+[ ] **Migración a TypeScript:** Refactorizar toda la lógica central y los helpers a TypeScript para garantizar una mayor seguridad en los tipos de datos y facilitar el mantenimiento a largo plazo.
+[ ] **Pruebas Automatizadas:** Implementación de pruebas unitarias con Jest para componentes críticos, como el motor de búsqueda y el selector de idioma.
 
-## 🚀Live Demo  
-**🔗[https://portfolio-clio-salgado.netlify.app]**
+**Fase 3: Rendimiento y DevOps** 🚀
 
-## 🎯 Project Goals
+[ ] **Pipeline de CI/CD:** Automatizar los flujos de despliegue y pruebas utilizando GitHub Actions.
+[ ] **Optimización de Rendimiento:** Alcanzar una puntuación constante de 100/100 en Google Lighthouse mediante la optimización de recursos (assets) e implementación de lazy loading en todos los modales de proyectos.
 
-Build a professional, functional, and visually engaging portfolio website that allows:
+## 👩‍💻 Contacto
+**Clio Salgado** - Científica de Datos & Desarrolladora Full-Stack
+*Transformando el conocimiento técnico en soluciones digitales con propósito.*
 
-- Showcasing my profile, education, technical and soft skills.
-- Displaying my projects developed with various technologies.
-- Providing direct access to contact and resume download.
-- Integrating a visual narrative that reflects my style, evolution, and strategic mindset.
-
-This project reinforces key practices such as:
-
-- Modular and reusable composition.
-- Responsive design across devices.
-- Smooth animations and intuitive navigation.
-- Curated soft skills expressed through high-impact phrases.
-- Clear organization of projects by technology and functionality.
-- Error handling, active social links, and a functional contact form.
-  
-## ⚛️Technologies Used⚡
-
-### Core Technologies
-
-| Tool / Language        | Primary Use   |
-|------------------------|---------------|
-| **HTML**               | Semantic structure of the site. |
-| **CSS**                | Custom and responsive styling. |
-| **JavaScript (ES6+)**  | Interactivity, validation, and animations. |
-| **Google Fonts**       | Custom typography and visual identity. |
-| **Boxicons**           | Semantic and visual icons. |
-| **EmailJS**            | Message delivery via contact form. |
-| **JS Confetti**        | Visual animation for final interaction. |
-| **GitHub**             | Version control and project repository. |
-| **Netlify**            | Hosting and deployment of the website. |
-
-### Logical Structure & Narrative
-
-- **Main Sections**: Home, About Me, Skills, Portfolio, Contact.
-- **Visual Narrative**: Strategic phrases that synthesize soft skills.
-- **Project Organization**: Category filters (Web / Data), smart search, and modal display.
-- **Modular Design**: Each section is autonomous and scalable.
-- **Responsive Design**: Seamless adaptation to mobile and desktop devices.
-- **Resume Download**: Direct access to updated PDF.
-- **Functional Form**: EmailJS integration with confirmation modal.
-- **Dark Mode & Language Toggle**: Accessibility and personalization.
-- **SVG Loader & 3D Carousel**: Visual transitions and interactive navigation.
-
-## 🗂️Project Structure
-
-```bash
-📁 PROJECTS&PORTFOLIO_CLIO/
-├── 📁 assets/
-|    |___ 📁 css/
-│    |    └── style.css
-|    |___ 📁 html/
-|    |___ 📁 img/
-│    |    └── Currículo_Clio-Salgado.pdf
-│    |    └── darkportfolio.png
-│    |    └── espana.png
-│    |    └── form_usercrud.png
-│    |    └── fortune_cookie.png
-│    |    └── fortune_cookie1.png
-│    |    └── fortune_cookie2.png
-│    |    └── loading_weather.png
-│    |    └── location_card.png
-│    |    └── logo.svg
-│    |    └── me.jpg
-│    |    └── me2.jpg
-│    |    └── me3.jpg
-│    |    └── picture1.png
-│    |    └── poke.png
-│    |    └── pokecard.png
-│    |    └── pokedex_home.png
-│    |    └── pokedex.png
-│    |    └── portfolio.png
-│    |    └── project_1.png
-│    |    └── project_2.png
-│    |    └── project_3.png
-│    |    └── project_4.png
-│    |    └── projects.png
-│    |    └── reino-unido.png
-│    |    └── residents_card.png
-│    |    └── Resume_Clio-Salgado.pdf
-│    |    └── rickandmorty_loading.png
-│    |    └── skills.png
-│    |    └── usercrud_home.png
-│    |    └── usercrud_loading.png
-│    |    └── weather.png
-│    |    └── weather1.png
-|    |___ 📁 js/
-|    |    |___ 📁 components/
-│    |    |    └── confettiEffect.js
-│    |    |    └── parallax.js
-│    |    |    └── selected_menu.js
-|    |    |___ 📁 helpers/
-│    |    |    └── date_updater.js
-│    |    |    └── language.js
-│    |    |    └── loader.js
-│    |    |    └── modal.js
-│    |    |    └── pagination.js
-│    |    |    └── projects.js
-│    |    |    └── reload_page.js
-│    |    |    └── send_form.js
-│    |    |    └── translations.js
-|    |    |___ main.js
-|    |___ 📁 lang/
-|    |    |___ index.html (version español)
-├── index.html (versión inglés)
-```
-
-## 🧠Key Features
-
-- Animated SVG loader on app launch.
-- Responsive navbar with dark mode and language toggle.
-- Home section with profile image, social links, and resume download.
-- “About Me” section with personal narrative and image gallery.
-- “Skills” section with expandable cards for technical skills and flip cards for soft skills.
-- “Projects” section with category filters, smart search, carousel, and modal details.
-- “Contact” section with personal info, social links, and functional form via EmailJS.
-- Footer with social media and final description.
-- Confetti animation upon reaching the contact section.
-- Fully responsive design and smooth section transitions.
-
-## 🛠️Local Installation
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/Clic-stack/Portafolio.git
-```
-
-2. (Optional) Install the **`vscode-pdf`** extension in **Visual Studio Code** to preview resumes directly in the code.
-
-3. Open the **`index.html`** file in your browser or use **`Live Server`** to view it locally.
-
-## 🎨Author  
-Created by Clio Salgado as part of her professional transition into the tech industry, combining analytical, visual, and narrative skills to build a strategic digital presence.
+LinkedIn | Email | Portfolio
