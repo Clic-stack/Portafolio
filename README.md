@@ -130,8 +130,6 @@ git clone [https://github.com/Clic-stack/Portafolio.git](https://github.com/Clic
 
 *"Transforming technical knowledge into digital solutions with purpose."*
 
-LinkedIn | Email | Portfolio
-
 **🇲🇽 Versión en Español**
 ## 📖 Historia y Evolución
 ***Este proyecto nació como una landing page básica y ha madurado hasta convertirse en un ecosistema sofisticado de marca personal. Desarrollado íntegramente con HTML5, CSS3 y JavaScript Vanilla, refleja mi proceso de Reskilling profesional: la fusión de 7 años de liderazgo operativo con un enfoque técnico en Ciencia de Datos y Desarrollo Full-Stack.***
@@ -260,5 +258,3 @@ git clone https://github.com/Clic-stack/Portafolio.git
 **Clio Salgado** - Científica de Datos & Desarrolladora Full-Stack
 
 *"Transformando el conocimiento técnico en soluciones digitales con propósito."*
-
-LinkedIn | Email | Portfolio
