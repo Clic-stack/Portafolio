@@ -26,7 +26,7 @@ export const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "Google Fonts", "Boxicons", "EmailJS", "JS Confetti", "GitHub", "Netlify"],
     demo: "https://portfolio-clio-salgado.netlify.app/#home",
     code: "https://github.com/Clic-stack/Portafolio",
-    featured: false
+    featured: true
   },
   {
     category: "web",
@@ -122,7 +122,7 @@ export const projects = [
     technologies: ["React + Vite", "Node.js & Express", "PostgreSQL & Sequelize (ORM)", "Zod", "Axios", "React Hook Form", "Postman", "Dotenv", "SCSS / CSS Modules", "React Icons", "Render", "Netlify", "Git & GitHub"],
     demo: "https://usercrud-fullstack.netlify.app",
     code: "https://github.com/Clic-stack/UserCrud-with-Local-Server",
-    featured: true
+    featured: false
   },
   {
     category: "web",
@@ -227,7 +227,7 @@ export const projects = [
     featured: true
   },
   {
-    category: "web",
+    category: "data",
     title: {
       en: "Blog Database System (PostgreSQL)",
       es: "Sistema de Base de Datos para un Blog con PostgreSQL"
